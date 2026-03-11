@@ -13,18 +13,20 @@ use App\Http\Middleware\LogAcessoMiddleware;
 |
 */
 
-Route::get('/', [App\Http\Controllers\Principal::class, 'principal']);
-Route::get('/contato', [App\Http\Controllers\Contato::class, 'contato']);
+Route::get('/', [App\Http\Controllers\Principal::class, 'index'])->name('pagina-principal');
+Route::get('/sobre', [App\Http\Controllers\Sobre::class, 'sobre'])->name('pagina-sobre');
+Route::get('/contato', [App\Http\Controllers\Contato::class, 'contato'])->name('pagina-contato');
+Route::get('/ds', [App\Http\Controllers\Ds::class, 'ds'])->name('pagina-ds');
+Route::get('/adm', [App\Http\Controllers\Adm::class, 'adm'])->name('pagina-adm');
+Route::get('/farm', [App\Http\Controllers\Farm::class, 'farm'])->name('pagina-farm');
+Route::get('/mb', [App\Http\Controllers\Mb::class, 'mb'])->name('pagina-mb');
 
-// exercicios 
-//aluno
-Route::get('/aluno', [App\Http\Controllers\Aluno::class, 'aluno']);
-//escola
-Route::get('/escola', [App\Http\Controllers\Escola::class, 'escola']);
-//professor
-Route::get('/professor/login', [App\Http\Controllers\Professsor::class, 'login']);
-Route::get('/professor/logout', [App\Http\Controllers\Professsor::class, 'logout']);
-Route::get('/professor/consultar-notas', [App\Http\Controllers\Professsor::class, 'consultarNotas']);
+
+
+
+
+
+
 
 
 
