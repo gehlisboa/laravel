@@ -14,17 +14,12 @@ use App\Http\Middleware\LogAcessoMiddleware;
 */
 
 Route::get('/', [App\Http\Controllers\Principal::class, 'principal']);
-Route::get('/contato', [App\Http\Controllers\Contato::class, 'contato']);
+Route::get('/contato/{nome}', [App\Http\Controllers\Contato::class, 'contato']);
 
-// exercicios 
-//aluno
-Route::get('/aluno', [App\Http\Controllers\Aluno::class, 'aluno']);
-//escola
-Route::get('/escola', [App\Http\Controllers\Escola::class, 'escola']);
-//professor
-Route::get('/professor/login', [App\Http\Controllers\Professsor::class, 'login']);
-Route::get('/professor/logout', [App\Http\Controllers\Professsor::class, 'logout']);
-Route::get('/professor/consultar-notas', [App\Http\Controllers\Professsor::class, 'consultarNotas']);
+Route::get('/contato/{nome}/{sobrenome}', [App\Http\Controllers\Contato::class, 'contatoNomeCompleto']);Route::get('/contato/{nome}', [App\Http\Controllers\Contato::class, 'contato']);
+
+Route::get('/contato/{nome}/{sobrenome}/{assunto}', [App\Http\Controllers\Contato::class, 'assunto']);Route::get('/contato/{nome}/{assunto}', [App\Http\Controllers\Contato::class, 'contato']);
+
 
 
 
