@@ -14,13 +14,12 @@ use App\Http\Middleware\LogAcessoMiddleware;
 */
 
 Route::get('/', [App\Http\Controllers\Principal::class, 'principal']);
-Route::get('/contato/{nome}', [App\Http\Controllers\Contato::class, 'contato']);
+Route::get('/aluno/listar', [App\Http\Controllers\Aluno::class, 'show'])->name('aluno.show');
+Route::get('/professor/listar', [App\Http\Controllers\Professor::class, 'show'])->name('professor.show');
+Route::get('/curso/listar', [App\Http\Controllers\Curso::class, 'show'])->name('curso.show');
+Route::get('/componente/listar', [App\Http\Controllers\Componente::class, 'show'])->name('componente.show');
 
-Route::get('/contato/{nome}/{sobrenome}', [App\Http\Controllers\Contato::class, 'contatoNomeCompleto']);Route::get('/contato/{nome}', [App\Http\Controllers\Contato::class, 'contato']);
-
-Route::get('/contato/{nome}/{sobrenome}/{assunto}', [App\Http\Controllers\Contato::class, 'assunto']);Route::get('/contato/{nome}/{assunto}', [App\Http\Controllers\Contato::class, 'contato']);
-
-
+Route::get('/aluno/add{nome}/{telefone}/{email}', [App\Http\Controllers\Aluno::class, 'add'])->name('aluno.add');
 
 
 
