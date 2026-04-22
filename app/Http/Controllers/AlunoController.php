@@ -24,3 +24,5 @@ class AlunoController extends Controller
 
     function consultar () {}
 }
+
+//model1
