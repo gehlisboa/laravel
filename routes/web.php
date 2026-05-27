@@ -28,6 +28,15 @@ Route::prefix('/curso')->group(function(){
     Route::post('/add', [App\Http\Controllers\CursoController::class, 'add'])->name('curso.add');
 }); 
 
+Route::prefix('/componente')->group(function(){
+    Route::get('/index', [App\Http\Controllers\ComponenteController::class, 'index'])->name('componente.index');
+    Route::post('/add', [App\Http\Controllers\ComponenteController::class, 'add'])->name('componente.add');
+}); 
+
+Route::prefix('/administrador')->group(function(){
+    Route::get('/index', [App\Http\Controllers\AdministradorController::class, 'index'])->name('administrador.index');
+    Route::post('/add', [App\Http\Controllers\AdministradorController::class, 'add'])->name('administrador.add');
+}); 
 
 
 
