@@ -60,7 +60,9 @@
                             </form>
                         </td>
                         <td>
-                            <button type="submit">Atualizar</button>
+                        <form action="{{ route('administrador.atualizar', ['id' => $administrador->id]) }}" method="GET">
+                                <button type="submit">Atualizar</button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach
