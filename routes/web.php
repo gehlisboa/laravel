@@ -30,4 +30,4 @@ Route::post('/like/{id}', [HomeController::class, 'like'])->name('like.post');
 
 use App\Http\Controllers\Tendencias\TendenciasController;
 
-Route::get('/tendencias', [TendenciasController::class, 'index']);
+Route::get('/tendencias/{categoria}', [TendenciasController::class, 'show']);

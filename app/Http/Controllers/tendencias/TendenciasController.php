@@ -5,9 +5,9 @@ namespace App\Http\Controllers\Tendencias;
 use App\Http\Controllers\Controller;
 
 class TendenciasController extends Controller
-
 {
     private $tendencias = [
+
         'y2k' => [
             'titulo' => 'Y2K Fashion',
             'descricao' => 'Estilo inspirado nos anos 2000, cores vibrantes e futurismo digital.',
@@ -36,14 +36,37 @@ class TendenciasController extends Controller
                 'https://i.pinimg.com/736x/71/e2/3a/71e23a1ac0643ec4f73c748880083887.jpg',
             ]
         ],
-    ];
+        'paris-fashion' => [
+            'titulo' => 'Paris Fashion',
+            'descricao' => 'Inspirado nas passarelas parisienses, alta-costura, elegância e sofisticação.',
+            'imagens' => [
+                'https://i.pinimg.com/736x/f5/d0/f5/f5d0f5b53eac5b31ff0dd82997527546.jpg',
+                'https://i.pinimg.com/736x/24/84/4e/24844ed99cf5539460203b7c5dd06589.jpg',
+                'https://i.pinimg.com/1200x/c6/a7/9a/c6a79aba705f66ddf02c65baac1ab402.jpg',
+            ]
+        ],
 
-    public function index()
-    {
-        return view('tendencias.index', [
-            'tendencias' => $this->tendencias
-        ]);
-    }
+        'editorial' => [
+            'titulo' => 'Editorial Fashion',
+            'descricao' => 'Fotografia de moda, direção criativa e narrativas visuais para revistas e campanhas.',
+            'imagens' => [
+                'https://i.pinimg.com/736x/41/9a/18/419a1888c0c8f1123df916347765cbbe.jpg',
+                'https://i.pinimg.com/1200x/43/c0/f6/43c0f65165cbee144fc9856dbb5b598a.jpg',
+                'https://i.pinimg.com/736x/06/90/8d/06908d00e272303270d079c2bb89a3fa.jpg',
+            ]
+        ],
+
+        'runway' => [
+            'titulo' => 'Runway',
+            'descricao' => 'Desfiles, tendências de passarela e coleções apresentadas por grandes marcas.',
+            'imagens' => [
+                'https://i.pinimg.com/1200x/fc/40/74/fc407423d9ef6de97df426dabc17c9f6.jpg',
+                'https://i.pinimg.com/1200x/1b/25/7a/1b257a610a46f12330bedcf9ae12d87e.jpg',
+                'https://i.pinimg.com/1200x/08/fd/dc/08fddcb1c3d539b74d26db54b91533c6.jpg',
+            ]
+        ],
+
+    ];
 
     public function show($categoria)
     {
@@ -51,7 +74,7 @@ class TendenciasController extends Controller
             abort(404);
         }
 
-        return view('tendencias.show', [
+        return view('tendencias.tendencias', [
             'tendencia' => $this->tendencias[$categoria]
         ]);
     }

@@ -115,12 +115,33 @@
 
     <div class="mood-grid">
 
-        <div class="mood-card">Y2K</div>
-        <div class="mood-card">Paris Fashion</div>
-        <div class="mood-card">Streetwear</div>
-        <div class="mood-card">Luxury</div>
-        <div class="mood-card">Editorial</div>
-        <div class="mood-card">Runway</div>
+        <div class="mood-grid">
+
+    <div class="mood-card">
+        <a href="/tendencias/y2k">Y2K</a>
+    </div>
+
+    <div class="mood-card">
+        <a href="/tendencias/paris-fashion">Paris Fashion</a>
+    </div>
+
+    <div class="mood-card">
+        <a href="/tendencias/streetwear">Streetwear</a>
+    </div>
+
+    <div class="mood-card">
+        <a href="/tendencias/luxo">Luxury Fashion</a>
+    </div>
+
+    <div class="mood-card">
+        <a href="/tendencias/editorial">Editorial</a>
+    </div>
+
+    <div class="mood-card">
+        <a href="/tendencias/runway">Runway</a>
+    </div>
+
+</div>
 
     </div>
 
