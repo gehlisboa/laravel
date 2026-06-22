@@ -19,26 +19,23 @@
     <!-- NAVBAR -->
 
     <nav class="navbar-fashion">
+    <div class="logo">Atelie De Mode</div>
 
-        <div class="logo">
-            Pixelift
-        </div>
+    <input type="text" placeholder="Buscar projetos, tendências, estilistas...">
 
-        <input type="text" placeholder="Buscar postagens...">
+    <div class="nav-buttons">
+        <a href="/" class="btn-nav">Home
+    </a>
 
-        <div class="nav-buttons">
+    <a href="{{ route('criar-postagem') }}" class="btn-nav">
+        Criar Post
+    </a>
 
-            <button type="button" class="btn-login">
-                Início
-            </button>
-
-            <button type="button" class="btn-register">
-                Ver Posts
-            </button>
-
-        </div>
-
-    </nav>
+    <a href="/usuario/1" class="btn-nav">
+        Perfil
+    </a>
+    </div>
+</nav>
 
     <!-- HERO -->
 

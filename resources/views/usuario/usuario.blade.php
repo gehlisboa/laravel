@@ -17,13 +17,21 @@
 <body>
 
 <nav class="navbar-fashion">
-    <div class="logo">FashionLink</div>
+    <div class="logo">Atelie De Mode</div>
 
-    <input type="text" placeholder="Buscar estilistas, modelos, fotógrafos...">
+    <input type="text" placeholder="Buscar projetos, tendências, estilistas...">
 
     <div class="nav-buttons">
-        <button class="btn-login">Entrar</button>
-        <button class="btn-register">Criar Perfil</button>
+        <a href="/" class="btn-nav">Home
+    </a>
+
+    <a href="{{ route('criar-postagem') }}" class="btn-nav">
+        Criar Post
+    </a>
+
+    <a href="/usuario/1" class="btn-nav">
+        Perfil
+    </a>
     </div>
 </nav>
 
@@ -61,6 +69,9 @@
         </div>
 
         <button class="follow-btn">Seguir Perfil</button>
+         <a href="{{ route('criar-postagem') }}" class="criar-btn">
+        Criar Post
+    </a>
 
     </div>
 
@@ -80,14 +91,14 @@
 
 </section>
 
-<section class="moodboards">
+<section class="trabalhos">
 
-    <h2>Moodboards Populares</h2>
+    <h2>Trabalhos&Interesses</h2>
 
     <div class="masonry">
 
-        @foreach($usuario['moodboards'] as $mood)
-            <img src="{{ $mood }}" alt="Moodboard">
+        @foreach($usuario['trabalhos/interesses'] as $trabalhos)
+            <img src="{{ $trabalhos }}" alt="trabalhos">
         @endforeach
 
     </div>
@@ -96,7 +107,7 @@
 
 <footer>
 
-    <h3>FashionLink</h3>
+    <h3>Atelie De Mode</h3>
     <p>Conectando profissionais da moda.</p>
 
 </footer>

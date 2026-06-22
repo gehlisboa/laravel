@@ -24,7 +24,7 @@ Route::get('/usuario/{user}', [UsuarioController::class, 'show']);
 
 use App\Http\Controllers\HomeController;
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/like/{id}', [HomeController::class, 'like'])->name('like.post');
 
 

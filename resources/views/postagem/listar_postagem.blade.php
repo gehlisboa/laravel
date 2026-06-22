@@ -15,24 +15,23 @@
 <body>
 
 <nav class="navbar-fashion">
+    <div class="logo">Atelie De Mode</div>
 
-    <div class="logo">
-        Pixelift
-    </div>
-
-    <input type="text" placeholder="Buscar postagens...">
+    <input type="text" placeholder="Buscar projetos, tendências, estilistas...">
 
     <div class="nav-buttons">
+        <a href="/" class="btn-nav">Home
+    </a>
 
-        <button class="btn-login"
-            onclick="window.location.href='/criar-postagem'">
-            Criar Post
-        </button>
+    <a href="{{ route('criar-postagem') }}" class="btn-nav">
+        Criar Post
+    </a>
 
+    <a href="/usuario/1" class="btn-nav">
+        Perfil
+    </a>
     </div>
-
 </nav>
-
 <section class="featured-profile">
 
     <div class="profile-left">

@@ -23,7 +23,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/fe/88/d0/fe88d0722b5f560aa3bb52f2a3f0036b.jpg',
                 'https://i.pinimg.com/control1/1200x/d6/b2/12/d6b212be2f29113a6ce5ade7badc9730.jpg'
             ],
-            'moodboards' => [
+            'trabalhos/interesses' => [
                 'https://i.pinimg.com/736x/09/b5/a5/09b5a5dcd7487ae6d5a87a3b2a35d90f.jpg',
                 'https://i.pinimg.com/1200x/30/d5/b8/30d5b8d20cfb7e73a3e8a743899d04dc.jpg',
                 'https://i.pinimg.com/control1/736x/aa/5e/b0/aa5eb0309b001188c9853a51a9a0341e.jpg',
@@ -41,45 +41,46 @@ class UsuarioController extends Controller
                 'conexoes' => 70
             ],
             'posts' => [
-                'https://i.pinimg.com/736x/17/3a/21/173a2127213ef911947f418660f181a7.jpg',
-                'https://i.pinimg.com/736x/ad/6f/6a/ad6f6a6c02558005354e50fb034cb0fc.jpg',
-                'https://i.pinimg.com/736x/ec/6d/77/ec6d77bacd96ff9b30a2dfd7be98d888.jpg',
-                'https://i.pinimg.com/1200x/1f/a8/8d/1fa88d74031b55dc15830f64fb7cfff6.jpg',
-                'https://i.pinimg.com/736x/50/86/6a/50866acd950501256cb2af76db83ad08.jpg',
-                'https://i.pinimg.com/736x/62/64/7c/62647c7212a746473c67ac7f97be7ad9.jpg',
-                'https://i.pinimg.com/736x/47/74/1c/47741cfd0ff39b2aed9e2d8ede273b98.jpg',
-                'https://i.pinimg.com/736x/93/3c/b2/933cb27cd56c52aac1cab0eac4b5e90c.jpg',
-                'https://i.pinimg.com/736x/fe/88/d0/fe88d0722b5f560aa3bb52f2a3f0036b.jpg',
-                'https://i.pinimg.com/736x/bb/48/47/bb48479e475aa5ff588478bb38aa069c.jpg',
-                'https://i.pinimg.com/736x/26/3b/13/263b13eb90e8c1a5f2982472804fc98f.jpg',
-                'https://i.pinimg.com/736x/42/c1/8d/42c18d6d0eadc3cdea8e4272df08ba37.jpg',
-                'https://i.pinimg.com/1200x/41/02/9e/41029ed87cd190cb0b236d8252f507e1.jpg',
-                'https://i.pinimg.com/736x/0e/b5/da/0eb5dac3a6d4f880fb793f81fabb59de.jpg',
-                'https://i.pinimg.com/736x/cb/60/c6/cb60c6d5357b2eacf09f419659b0fb74.jpg',
-                'https://i.pinimg.com/736x/dd/af/cf/ddafcf03c42998cbf48cd03abe4901f5.jpg',
-                'https://i.pinimg.com/736x/34/bc/11/34bc112ea839c9af27a85352f477704b.jpg',
-                'https://i.pinimg.com/736x/04/9d/88/049d883ed9792f68e8bde67beda80d45.jpg',
-                'https://i.pinimg.com/736x/a9/50/62/a95062ed76a0abac38e40f1a1fa7af56.jpg'
+                'https://i.pinimg.com/736x/db/38/c4/db38c4a644ee871758b650ccab1085a0.jpg',
+                'https://i.pinimg.com/control1/1200x/d8/db/7b/d8db7b886f1c889d3a7b7d38a1332620.jpg',
+                'https://i.pinimg.com/736x/90/c3/14/90c314590f4017b3d8d20639621bfb3b.jpg',
+                'https://i.pinimg.com/control1/736x/68/ab/83/68ab83f974124115406cafccad5bc1ea.jpg',
+                'https://i.pinimg.com/736x/8e/0a/e0/8e0ae02e7e78ffb79a1a5a99dca43730.jpg',
+                'https://i.pinimg.com/736x/ee/e7/27/eee7275c2065ea985dce493c25dbe2de.jpg',
+                'https://i.pinimg.com/736x/5e/a8/dc/5ea8dc2046b3647683a9827c334448c8.jpg',
+                'https://i.pinimg.com/control1/1200x/39/28/e2/3928e259fce9b6d8490366b7ab8df106.jpg',
+                'https://i.pinimg.com/736x/ff/79/66/ff79667dc665241c4f49246ef7ffea74.jpg',
+                'https://i.pinimg.com/736x/a8/4d/e8/a84de86d20231ddfbf5b5b8f7fa8db94.jpg',
+                'https://i.pinimg.com/736x/8d/66/f9/8d66f9696a99feeff4e4caf60a990ab5.jpg',
+                'https://i.pinimg.com/736x/c3/40/73/c34073847ebd082823ba3cfe1eeea952.jpg',
+                'https://i.pinimg.com/control1/1200x/c8/16/ed/c816ed7482f3247ac8ac0be2cbef57c7.jpg',
+                'https://i.pinimg.com/736x/61/ac/1c/61ac1ca80a05ef6073b1a537fff1880c.jpg',
+                'https://i.pinimg.com/736x/a9/b9/91/a9b99173f8dea2165f5202d8e10f7935.jpg',
+                'https://i.pinimg.com/474x/cd/87/92/cd8792b197429f84da0e105ca06611dd.jpg',
+                'https://i.pinimg.com/736x/94/5b/71/945b71c86264e54c4c169fa68f4d8277.jpg',
+                'https://i.pinimg.com/1200x/32/be/15/32be1548e06bd0aedd425de9d687e549.jpg',
+                'https://i.pinimg.com/736x/38/29/8b/38298b01e647dffb01bdfdc6d063296e.jpg'
             ],
-            'moodboards' => [
-               'https://i.pinimg.com/1200x/27/89/98/278998e9ec14f7e484f63902be2677f4.jpg',
-                'https://i.pinimg.com/736x/c8/8a/a2/c88aa2919c57fb04b1756879f76532c1.jpg',
-                'https://i.pinimg.com/736x/91/76/49/917649389c2d8dcea9f3be230b3d49ad.jpg',
-                'https://i.pinimg.com/736x/4f/51/21/4f5121c13d44d88d450436a08ec91006.jpg',
-                'https://i.pinimg.com/736x/6b/c4/d1/6bc4d1e946ae07a64354071221f0a6b0.jpg',
-                'https://i.pinimg.com/736x/a1/ec/01/a1ec01ec3f5226860f4ffff584c2be0e.jpg',
-                'https://i.pinimg.com/736x/e2/15/bb/e215bbe0f408778f1aaa761a8a6a8e41.jpg',
-                'https://i.pinimg.com/1200x/17/fc/ff/17fcfffee990d96e9c5457e5ff7d71fa.jpg',
-                'https://i.pinimg.com/736x/5b/2a/1f/5b2a1f77038159c6fa16159e7c128b40.jpg',
-                'https://i.pinimg.com/1200x/37/30/fb/3730fb673cbcb665470263a76646e929.jpg',
-                'https://i.pinimg.com/736x/b2/44/8c/b2448ce572d3faf44aa5c26667928002.jpg',
-                'https://i.pinimg.com/736x/8c/af/01/8caf012c04959a8876587e5d0990180f.jpg',
-                'https://i.pinimg.com/736x/a7/86/02/a78602c94a29285742459f4fd80b25a3.jpg',
-                'https://i.pinimg.com/736x/d1/62/34/d16234cf7864992e3303679acd4cd57b.jpg',
-                'https://i.pinimg.com/736x/01/c2/e8/01c2e8c1be99503a40f370e8f025174b.jpg',
-                'https://i.pinimg.com/736x/d1/39/78/d13978e04fdcc60ce9be40bb7b058d82.jpg',
-                'https://i.pinimg.com/736x/81/63/e0/8163e0f28ec1ddda29df1e737cfdee42.jpg'
-            ]    
+            'trabalhos/interesses' => [
+                'https://i.pinimg.com/736x/09/b5/a5/09b5a5dcd7487ae6d5a87a3b2a35d90f.jpg',
+                'https://i.pinimg.com/1200x/30/d5/b8/30d5b8d20cfb7e73a3e8a743899d04dc.jpg',
+                'https://i.pinimg.com/control1/736x/aa/5e/b0/aa5eb0309b001188c9853a51a9a0341e.jpg',
+                'https://i.pinimg.com/736x/4e/8d/e2/4e8de245c33227fd6c3e6d5105b562e5.jpg',
+                'https://i.pinimg.com/736x/ff/7e/c6/ff7ec6bce8c7263ee04f568d7a45e2b9.jpg',
+                'https://i.pinimg.com/control1/1200x/f6/60/59/f66059e2f8175ad01e9c6e95c7ca88e7.jpg',
+                'https://i.pinimg.com/control1/1200x/2c/d8/3d/2cd83d51086f1e673079b50c78b5dec6.jpg',
+                'https://i.pinimg.com/control1/1200x/37/f3/3e/37f33e02c73615747b0d65e0fbec7496.jpg',
+                'https://i.pinimg.com/control1/736x/d7/ae/f4/d7aef4ae51cd4415c0c69255e2d8b29e.jpg',
+                'https://i.pinimg.com/736x/2a/28/8a/2a288ae327fafb0429ff5c9c3a4cf504.jpg',
+                'https://i.pinimg.com/736x/01/cc/7f/01cc7f2217c65068557a65b340ffc1be.jpg',
+                'https://i.pinimg.com/control1/736x/df/f5/66/dff56696f6a214dc5d4c2a081e60725c.jpg',
+                'https://i.pinimg.com/control1/736x/20/de/8c/20de8cefead4f09bfa841f695d77960c.jpg',
+                'https://i.pinimg.com/control1/736x/60/cf/56/60cf56cd49d8929cd80dfad538556393.jpg',
+                'https://i.pinimg.com/1200x/05/2a/80/052a80d74bb58b2f22bcb122a9872263.jpg',
+                'https://i.pinimg.com/1200x/9f/ba/ed/9fbaedaca7aaa5d6bd02a6fe83e30529.jpg',
+                'https://i.pinimg.com/736x/e5/7f/3e/e57f3e177200dda918e4830f33b22fc6.jpg',
+                'https://i.pinimg.com/736x/b9/6c/b9/b96cb921686fb2d64264b134c4cb46ed.jpg'
+                            ]    
         ],
 
         'helena' => [
@@ -107,7 +108,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/1200x/3d/0b/7e/3d0b7e3f3802cef5eaac578513402bec.jpg',
                 'https://i.pinimg.com/736x/3e/6f/3a/3e6f3ac26e7c1a1e207db65ec3b32faf.jpg'
             ],
-            'moodboards' => [
+            'trabalhos/interesses' => [
                 'https://i.pinimg.com/1200x/ac/fb/4f/acfb4f7ef1787d037118409955e601a4.jpg',
                 'https://i.pinimg.com/736x/bf/3a/0b/bf3a0b2bfab9764f4e1c4a647a87b2f1.jpg',
                 'https://i.pinimg.com/736x/5a/04/77/5a0477ed7357cdbcf9f33030e46fff7e.jpg',
@@ -125,7 +126,7 @@ class UsuarioController extends Controller
 
         'olivia' => [
             'username' => 'livfontenelle',
-            'foto' => 'https://i.pinimg.com/736x/c6/fd/58/c6fd587c411a7423837845b4b9fc5171.jpg',
+            'foto' => 'https://i.pinimg.com/736x/46/cd/66/46cd664aafbf127b0a801caec18075c3.jpg',
             'profissao' => 'Estilista/Caça Tendências ',
             'bio' => 'Acredito que a moda vai além das roupas: ela reflete comportamento, identidade e transformação. Minha missão é traduzir essas mudanças em designs inovadores e atemporais.',
             'stats' => [
@@ -151,7 +152,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/e8/5d/ea/e85deac770816eb0467c1d4623d320ba.jpg',
                 'https://i.pinimg.com/1200x/b0/92/43/b09243766a517f30cfda70711e30d2de.jpg'
             ],
-            'moodboards' => [
+            'trabalhos/interesses' => [
                'https://i.pinimg.com/736x/44/6f/47/446f47d2352710b811c4b5c48bdbeef3.jpg',
                 'https://i.pinimg.com/736x/99/62/a6/9962a62aca71bb4b34824b910d761dbf.jpg',
                 'https://i.pinimg.com/736x/c7/91/61/c791612b74ec74b4f49edd9622012bc8.jpg',
@@ -194,7 +195,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/4c/91/4d/4c914d28d4b4d23533be8dfdb38fb8f4.jpg',
                 'https://i.pinimg.com/736x/6a/b5/93/6ab593d1f38c5b0ec25a6154feb9665b.jpg'
             ],
-            'moodboards' => [
+            'trabalhos/interesses' => [
                 'https://i.pinimg.com/736x/e5/ec/ca/e5ecca1b98ee4c30c2b087d026d4077c.jpg',
                 'https://i.pinimg.com/736x/d7/e0/b1/d7e0b10d510c7855e58a46fcc74e2a4f.jpg',
                 'https://i.pinimg.com/1200x/b3/89/a9/b389a9fa966c3bc8733ffe483fe0ecaa.jpg',
@@ -237,7 +238,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/1200x/c2/9d/4d/c29d4dc089ea2d0cbd21480e961fa2dc.jpg',
                 'https://i.pinimg.com/736x/58/2a/ab/582aab7842ec9bea1514a7f7da0b366d.jpg'
             ],
-            'moodboards' => [
+            'trabalhos/interesses' => [
                 'https://i.pinimg.com/736x/fb/d6/d5/fbd6d5442b821f208d84d51acb537404.jpg',
                 'https://i.pinimg.com/736x/47/05/5b/47055bdce324324363d3cd6ac82edd97.jpg',
                 'https://i.pinimg.com/1200x/a6/b4/c2/a6b4c255681ae84353c755f4016855bb.jpg',
@@ -260,7 +261,8 @@ class UsuarioController extends Controller
             'username' => '@clamontblanc',
             'foto' => 'https://i.pinimg.com/736x/79/5b/c3/795bc30f412533da4d3ba77d1892a8f1.jpg',
             'profissao' => 'Pesquisadora de História da Moda',
-            'bio' => '  A moda é um reflexo do tempo, da cultura e das transformações sociais. Através da pesquisa histórica, busco compreender como o vestir constrói identidades, preserva memórias e traduz os movimentos de cada época.',
+            'bio' => 'A moda é um reflexo do tempo, da cultura e das transformações sociais. Através da pesquisa histórica, busco compreender como o vestir constrói identidades, preserva memórias e traduz os movimentos de cada época.',
+            'stats' => [
                 'projetos' => 56,
                 'seguidores' => '93k',
                 'conexoes' => 358
@@ -286,7 +288,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/04/9d/88/049d883ed9792f68e8bde67beda80d45.jpg',
                 'https://i.pinimg.com/736x/a9/50/62/a95062ed76a0abac38e40f1a1fa7af56.jpg',
             ],
-            'moodboards' => [
+            'trabalhos/interesses' => [
                 'https://i.pinimg.com/1200x/27/89/98/278998e9ec14f7e484f63902be2677f4.jpg',
                 'https://i.pinimg.com/736x/c8/8a/a2/c88aa2919c57fb04b1756879f76532c1.jpg',
                 'https://i.pinimg.com/736x/91/76/49/917649389c2d8dcea9f3be230b3d49ad.jpg',
@@ -304,12 +306,14 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/01/c2/e8/01c2e8c1be99503a40f370e8f025174b.jpg',
                 'https://i.pinimg.com/736x/d1/39/78/d13978e04fdcc60ce9be40bb7b058d82.jpg',
                 'https://i.pinimg.com/736x/81/63/e0/8163e0f28ec1ddda29df1e737cfdee42.jpg'
+               ]
             ],
             'serena' => [
             'username' => '@serenacastelli',
-            'foto' => 'https://i.pinimg.com/736x/79/5b/c3/795bc30f412533da4d3ba77d1892a8f1.jpg',
+            'foto' => 'https://i.pinimg.com/736x/a8/bb/bb/a8bbbbd0bebb209df26e7d0ed0471932.jpg',
             'profissao' => 'Maquiadora Editorial Fashion',
             'bio' => 'A maquiagem é uma extensão da linguagem da moda. Através dela, procuro construir narrativas visuais que traduzam conceitos, despertem emoções e valorizem a individualidade.',
+            'stats' => [
                 'projetos' => 43,
                 'seguidores' => '35k',
                 'conexoes' => 238
@@ -334,7 +338,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/2b/5c/64/2b5c64e030f47cde5a23da1506fc09a1.jpg',
                 'https://i.pinimg.com/736x/7c/28/2a/7c282abda3757e7e2dddd7dc323845a7.jpg'
             ],
-            'moodboards' => [
+            'trabalhos/interesses' => [
                 'https://i.pinimg.com/736x/34/ce/62/34ce62256b9161dfae2c40df1dd4d12a.jpg',
                 'https://i.pinimg.com/736x/f7/b8/7e/f7b87e69cbfddf31eccb54c82fb8c3f4.jpg',
                 'https://i.pinimg.com/736x/8f/c9/52/8fc9520eaff42d643b8690401f5a9feb.jpg',
@@ -350,12 +354,14 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/db/ac/4a/dbac4a57454c905085e3ac988ee981e3.jpg',
                 'https://i.pinimg.com/736x/30/2f/b9/302fb9342690e7142306473157f4d05e.jpg',
                 'https://i.pinimg.com/1200x/9c/01/d6/9c01d6ac6683d3eb27facf8b94dae588.jpg'
-            ],
+            ]
+        ],
             'theo' => [
             'username' => '@theolaurent',
             'foto' => 'https://i.pinimg.com/736x/38/21/76/3821763b1cc3030029573e14433f8fd8.jpg',
             'profissao' => 'Costureiro das grifes',
             'bio' => 'Por meio da costura e do trabalho artesanal, transformo visões criativas em realidade, garantindo que cada peça seja confeccionada com cuidado, precisão e arte.',
+            'stats' => [
                 'projetos' => 150,
                 'seguidores' => '195k',
                 'conexoes' => 532
@@ -378,7 +384,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/53/e2/02/53e2027f3e9166de07d95c53226d2c4a.jpg',
                 'https://i.pinimg.com/1200x/a4/74/17/a474172d8e5e72f27e93d7741a92d701.jpg'
             ],
-            'moodboards' => [
+            'trabalhos/interesses' => [
                 'https://i.pinimg.com/736x/b4/c2/8f/b4c28fecf5588d823762b17d109f2a1e.jpg',
                 'https://i.pinimg.com/736x/cf/8f/9a/cf8f9a098e280a782c21e02a5c35c4e1.jpg',
                 'https://i.pinimg.com/1200x/c7/c8/d1/c7c8d15acb63276a43e6bbbcb8511a03.jpg',
@@ -391,9 +397,8 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/1200x/da/8c/dc/da8cdcca2165da5ec47d3065d053b516.jpg',
                 'https://i.pinimg.com/736x/8a/e2/84/8ae2849d6ff7e94f5ebf2d83e5298e10.jpg',
                 'https://i.pinimg.com/736x/53/08/61/5308616ec5670d81d70d6687042a2f1b.jpg'
-            ],
-
-
+            ]
+            ]
         ];
     
 

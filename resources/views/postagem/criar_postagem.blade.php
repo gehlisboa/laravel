@@ -12,13 +12,21 @@
 <body>
 
 <nav class="navbar-fashion">
-    <div class="logo">FashionHub</div>
+    <div class="logo">Atelie De Mode</div>
 
-    <input type="text" placeholder="Pesquisar...">
+    <input type="text" placeholder="Buscar projetos, tendências, estilistas...">
 
     <div class="nav-buttons">
-        <button class="btn-login">Entrar</button>
-        <button class="btn-register">Cadastrar</button>
+        <a href="/" class="btn-nav">Home
+    </a>
+
+    <a href="{{ route('criar-postagem') }}" class="btn-nav">
+        Criar Post
+    </a>
+
+    <a href="/usuario/1" class="btn-nav">
+        Perfil
+    </a>
     </div>
 </nav>
 

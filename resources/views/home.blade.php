@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>FashionLink</title>
+<title>Atelie De Mode</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -14,13 +14,21 @@
 <body>
 
 <nav class="navbar-fashion">
-    <div class="logo">FashionLink</div>
+    <div class="logo">Atelie De Mode</div>
 
     <input type="text" placeholder="Buscar projetos, tendências, estilistas...">
 
     <div class="nav-buttons">
-        <a href="#" class="btn-login">Explorar</a>
-        <a href="#" class="btn-register">Publicar Projeto</a>
+        <a href="/" class="btn-nav">Home
+    </a>
+
+    <a href="{{ route('criar-postagem') }}" class="btn-nav">
+        Criar Post
+    </a>
+
+    <a href="/usuario/1" class="btn-nav">
+        Perfil
+    </a>
     </div>
 </nav>
 
@@ -31,12 +39,12 @@
 
     <div class="stories-container">
 
-        @foreach($users as $user)
-            <a href="/usuario/{{ $user['username'] }}" class="story">
-                <img src="{{ $user['photo'] }}">
-                <span>{{ $user['name'] }}</span>
-            </a>
-        @endforeach
+        @foreach($users as $key => $user)
+    <a href="/usuario/{{ $key }}" class="story">
+        <img src="{{ $user['photo'] }}" alt="{{ $user['name'] }}">
+        <span>{{ $user['name'] }}</span>
+    </a>
+@endforeach
 
     </div>
 
@@ -51,7 +59,7 @@
 
     <div class="profile-right">
 
-        <h2>FashionLink Community</h2>
+        <h2>Atelie De Mode Community</h2>
 
         <p>Compartilhe • Inspire • Conecte</p>
 
@@ -60,14 +68,46 @@
         </p>
 
         <div class="stats">
-            <div><h3>500+</h3><span>Projetos</span></div>
-            <div><h3>2k+</h3><span>Criadores</span></div>
+            <div><h3>500k+</h3><span>Projetos</span></div>
+            <div><h3>50k+</h3><span>Criadores</span></div>
             <div><h3>150+</h3><span>Novidades</span></div>
         </div>
 
     </div>
 
 </section>
+<section class="tendencias">
+    <h3>Tendências Populares</h3>
+
+    <div class="mood-grid">
+
+        <div class="mood-card y2k">
+            <a href="/tendencias/y2k">Y2K</a>
+        </div>
+
+        <div class="mood-card animal">
+            <a href="/tendencias/animal-print">Animal Print</a>
+        </div>
+
+        <div class="mood-card polkadots">
+            <a href="/tendencias/polka-dots">Polka dots</a>
+        </div>
+
+        <div class="mood-card cool">
+            <a href="/tendencias/cool-culture">Cool Culture</a>
+        </div>
+
+        <div class="mood-card underground">
+            <a href="/tendencias/underground">Underground</a>
+        </div>
+
+        <div class="mood-card vintage">
+            <a href="/tendencias/vintage">Vintage</a>
+        </div>
+
+    </div>
+</section>
+
 
 <!-- POSTS COM LIKE -->
 <section class="feed-section">
@@ -75,6 +115,7 @@
     <h2>Tendências da Semana</h2>
 
     <div class="masonry">
+        
 
         @foreach($posts as $post)
             <div style="position:relative;">
@@ -108,48 +149,11 @@
 
 </section>
 
-<!-- CATEGORIAS -->
-<section class="moodboards">
 
-    <h2>Categorias Populares</h2>
-
-    <div class="mood-grid">
-
-        <div class="mood-grid">
-
-    <div class="mood-card">
-        <a href="/tendencias/y2k">Y2K</a>
-    </div>
-
-    <div class="mood-card">
-        <a href="/tendencias/paris-fashion">Paris Fashion</a>
-    </div>
-
-    <div class="mood-card">
-        <a href="/tendencias/streetwear">Streetwear</a>
-    </div>
-
-    <div class="mood-card">
-        <a href="/tendencias/luxo">Luxury Fashion</a>
-    </div>
-
-    <div class="mood-card">
-        <a href="/tendencias/editorial">Editorial</a>
-    </div>
-
-    <div class="mood-card">
-        <a href="/tendencias/runway">Runway</a>
-    </div>
-
-</div>
-
-    </div>
-
-</section>
 
 <footer>
 
-    <h3>FashionLink</h3>
+    <h3>Atelie De Mode</h3>
     <p>Conectando criadores de moda.</p>
 
 </footer>
