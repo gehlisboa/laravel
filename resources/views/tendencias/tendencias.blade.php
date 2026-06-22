@@ -49,9 +49,9 @@
         </p>
 
 
-     <a href="{{ route('home') }}" class="botao {{ $temaBotao }}">
+        <a href="{{ route('home') }}">
     Voltar para home
-    </a>
+</a>
 
     </div>
 

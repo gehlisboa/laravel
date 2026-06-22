@@ -9,7 +9,11 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
@@ -17,22 +21,26 @@
 <body>
 
 <nav class="navbar-fashion">
-    <div class="logo">Atelie De Mode</div>
+
+    <div class="logo-container">
+        <span class="titulo">Atelie</span>
+        <span class="subtitulo">De Mode</span>
+    </div>
 
     <input type="text" placeholder="Buscar projetos, tendências, estilistas...">
 
     <div class="nav-buttons">
-        <a href="/" class="btn-nav">Home
-    </a>
+        <a href="/" class="btn-nav">Home</a>
 
-    <a href="{{ route('criar-postagem') }}" class="btn-nav">
-        Criar Post
-    </a>
+        <a href="{{ route('criar-postagem') }}" class="btn-nav">
+            Criar Post
+        </a>
 
-    <a href="/usuario/1" class="btn-nav">
-        Perfil
-    </a>
+        <a href="/usuario/1" class="btn-nav">
+            Perfil
+        </a>
     </div>
+
 </nav>
 
 <section class="featured-profile">
@@ -43,7 +51,7 @@
 
     <div class="profile-right">
 
-        <h2>{{ $usuario['username'] }}</h2>
+    <h2 class="username">{{ $usuario['username'] }}</h2>
 
         <p class="profession">{{ $usuario['profissao'] }}</p>
 

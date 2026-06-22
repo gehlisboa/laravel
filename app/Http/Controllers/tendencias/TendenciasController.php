@@ -175,7 +175,7 @@ class TendenciasController extends Controller
 
 ];
 
-   public function show($categoria)
+public function show($categoria)
 {
     if (!isset($this->tendencias[$categoria])) {
         abort(404);
@@ -183,13 +183,7 @@ class TendenciasController extends Controller
 
     $tendencia = $this->tendencias[$categoria];
 
-    $temaBotao = match ($categoria) {
-        'y2k' => 'botao-y2k',
-        'animal-print' => 'botao-animal',
-        default => 'botao-y2k',
-    };
-
-    return view('tendencias.tendencias', compact('tendencia', 'temaBotao'));
+    return view('tendencias.tendencias', compact('tendencia'));
 }
        
 }
