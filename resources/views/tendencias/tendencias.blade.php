@@ -8,28 +8,38 @@
 <title>{{ $tendencia['titulo'] }} | Atelie De Mode</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
 
 <nav class="navbar-fashion">
-    <div class="logo">Atelie De Mode</div>
+
+    <div class="logo-container">
+        <span class="titulo">Atelie</span>
+        <span class="subtitulo">De Mode</span>
+    </div>
 
     <input type="text" placeholder="Buscar projetos, tendências, estilistas...">
 
     <div class="nav-buttons">
-        <a href="/" class="btn-nav">Home
-    </a>
+        <a href="/" class="btn-nav">Home</a>
 
-    <a href="{{ route('criar-postagem') }}" class="btn-nav">
-        Criar Post
-    </a>
+        <a href="{{ route('criar-postagem') }}" class="btn-nav">
+            Criar Post
+        </a>
 
-    <a href="/usuario/1" class="btn-nav">
-        Perfil
-    </a>
+        <a href="/usuario/1" class="btn-nav">
+            Perfil
+        </a>
     </div>
+
 </nav>
 
 <!-- HERO DA TENDÊNCIA -->
@@ -38,11 +48,14 @@
 
     <div class="profile-right">
 
-        <h2>{{ $tendencia['titulo'] }}</h2>
+        
+        <h1 class="nome-tendencia">
+    {{ $tendencia['titulo'] }}
+</h1>
 
-        <p class="profession">
-            Tendência em destaque
-        </p>
+<p class="destaque-tendencia">
+    Tendência em destaque
+</p>
 
         <p>
             {{ $tendencia['descricao'] }}
@@ -85,6 +98,7 @@
     <p>Conectando criadores de moda.</p>
 
 </footer>
+
 
 </body>
 </html>

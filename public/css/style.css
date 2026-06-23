@@ -170,6 +170,41 @@
     margin-bottom:20px;
 }
 
+/* NOME DA TENDÊNCIA */
+
+.nome-tendencia{
+    font-family:'Cinzel', serif;
+    font-size:48px;
+    font-weight:700;
+
+    background:linear-gradient(
+        180deg,
+        #2f2f2f 0%,
+        #7a7a7a 35%,
+        #b0b0b0 50%,
+        #7a7a7a 65%,
+        #2f2f2f 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:0;
+    line-height:1.1;
+}
+
+/* TEXTO ROSA EM DESTAQUE */
+
+.destaque-tendencia{
+    font-family:'Pinyon Script', cursive;
+    font-size:42px;
+    color:#d89ca8;
+
+    margin-top:-5px;
+    margin-bottom:20px;
+
+    line-height:1;
+}
 /* ==========================
    FOOTER
 ========================== */
