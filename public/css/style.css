@@ -242,11 +242,21 @@ footer h3{
 
     /* STORIES */
     .stories{
-    padding:20px 8%;
+        padding:20px 8% 0px 8%;
     }
     
     .stories h2{
-    margin-bottom:50px;
+        margin:20px;
+        margin-bottom:35px;
+        font-family:'Cinzel', serif;
+        font-size:22px;
+        font-weight:600;
+        color:#797373;
+    
+        letter-spacing:2px;
+        text-transform:uppercase;
+    
+        text-align:center;
     }
     
     .stories-container{
@@ -257,6 +267,7 @@ footer h3{
     
     .story{
     text-align:center;
+    
     }
     
     .story img{
@@ -276,7 +287,7 @@ footer h3{
     /* PERFIL */
     
     .featured-profile{
-    padding:50px 8%;
+    padding:30px 8% 50px 8%;
     display:flex;
     gap:50px;
     align-items:center;
@@ -292,10 +303,24 @@ footer h3{
     .profile-right{
     max-width:600px;
     }
+
     
-    /* .profile-right h2{
-    font-size:40px;
-    } */
+    .pagina-tendencia{
+        justify-content:center;
+    }
+    
+    .conteudo-tendencia{
+        text-align:center;
+        margin:0 auto;
+        max-width:1100px; /* mais largo */
+    }
+    
+    .conteudo-tendencia p{
+        max-width:1200px; /* texto ocupa mais espaço */
+        margin:5px auto 0; /* afasta do título/subtítulo */
+        line-height:1.8;
+    }
+    
     
     .stats{
     display:flex;
@@ -307,23 +332,19 @@ footer h3{
     font-size:28px;
     }
     
-    .follow-btn,
-    .criar-btn {
-    margin-top: 30px;
-    background: #222;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 30px;
-}
+ 
     
     /* FEED */
     
    section {
     padding: 60px 8%;
+    padding-top:20px;
     margin-bottom: 40px;
 }
-    
+.feed-section,
+.tendencias{
+    margin-top: -40px;
+}
     .masonry{
     columns:4;
     column-gap:15px;
@@ -434,16 +455,17 @@ footer h3{
     background-image:url('https://i.pinimg.com/1200x/24/c9/f7/24c9f7ee7e253fca6138552f1c8628a4.jpg');
 }
 
-    /* FOOTER */
-    
-    footer{
+footer{
     margin-top:60px;
     padding:40px;
-    background:#222;
-    color:white;
+
+    background:white; /* igual navbar */
+    color:#222;
+
     text-align:center;
-    }
-    
+
+    box-shadow:0 -3px 15px rgba(0,0,0,.08);
+}
     /* RESPONSIVO */
     
     @media(max-width:900px){
@@ -629,14 +651,6 @@ a {
     text-decoration: none;
 }
 
-.botao-y2k {
-    background-image: url('https://i.pinimg.com/736x/95/3e/d1/953ed1f1ead0eaa019ad4999c723b5be.jpg');
-}
-
-.botao-animal {
-    background: linear-gradient(135deg, #fff0d9, #ffccaa);
-    color: #3a2a1e;
-}
 
 .botao:hover {
     transform: scale(1.05);
@@ -714,32 +728,9 @@ a {
     transform:translateY(-2px);
     background:#c98895;
     }
-  
-    .btn-home{
-    display:inline-block;
-
-    margin-top:25px;
-    padding:12px 24px;
-
-    background:#d89ca8;
-    color:white;
-
-    text-decoration:none;
-    border-radius:30px;
-
-    font-weight:600;
-
-    transition:.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
+ 
 
 
-
-.btn-home:hover{
-    background:#c98895;
-    color:white;
-    transform:translateY(-2px);
-}
     /* PUBLICAR PROJETO */
   
   .publish-hero{
@@ -808,3 +799,37 @@ a {
     background:#c98895;
     transform:translateY(-2px);
     }
+
+/* BOTÕES BASE (CORRIGIDO) */
+
+.btn-follow,
+.btn-criar,
+.btn-home{
+    display:inline-block;
+    margin-top:25px;
+
+    padding:14px 32px;
+
+    font-family:'Cinzel', serif;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    color:#fff;
+
+    border:none;
+    border-radius:30px;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+    position:relative;
+    overflow:hidden;
+
+    background:#d89ca8; /* <- GARANTE QUE NÃO FIQUE BRANCO */
+    box-shadow:0 6px 18px rgba(216,156,168,.35);
+}

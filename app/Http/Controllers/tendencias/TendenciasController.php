@@ -10,7 +10,7 @@ class TendenciasController extends Controller
 
     'y2k' => [
         'titulo' => 'Y2K',
-        'descricao' => 'A estética dos anos 2000 com brilho, cores vibrantes, jeans de cintura baixa e referências da cultura pop.',
+        'descricao' => 'A tendência Y2K resgata a estética marcante dos anos 2000, combinando ousadia, nostalgia e referências da cultura pop da virada do milênio. Caracterizada por peças de cintura baixa, tecidos brilhantes, minissaias, óculos coloridos e acessórios maximalistas, ela celebra uma moda divertida e sem medo de chamar atenção. O movimento ganhou força entre as novas gerações por meio das redes sociais, reinterpretando elementos icônicos da época com um olhar contemporâneo. Mais do que uma tendência, o Y2K representa uma expressão de individualidade e atitude. Inspirada pelo avanço tecnológico e pelo imaginário digital do início da internet, a estética mistura futurismo otimista com um toque kitsch característico da época. Brilhos metálicos, cores vibrantes e referências a ícones da cultura pop reforçam seu visual marcante e expressivo. Dessa forma, o Y2K se consolida como uma estética cíclica que retorna com força, adaptada ao contexto atual, mas mantendo sua essência irreverente e cheia de personalidade.',
         'imagens' => [
             'https://i.pinimg.com/1200x/95/32/fb/9532fbf8710cb14361a68c69aae5a791.jpg',
             'https://i.pinimg.com/736x/87/e2/a7/87e2a7f8a5683fd94e8ad0c30e20cd03.jpg',
@@ -46,7 +46,7 @@ class TendenciasController extends Controller
 
     'animal-print' => [
         'titulo' => 'Animal Print',
-        'descricao' => 'Estampas inspiradas em animais como onça, zebra e cobra, trazendo personalidade e ousadia aos looks.',
+        'descricao' => 'O Animal Print permanece como uma das tendências mais icônicas e versáteis da moda, destacando-se por sua capacidade de transmitir personalidade, sofisticação e atitude. Entre as principais estampas estão a oncinha (leopard print), a zebra, a cobra (snake print), o tigre e a vaca (cow print), cada uma com características visuais únicas que se adaptam a diferentes estilos. Atualmente, essas padronagens aparecem tanto em versões clássicas quanto em releituras coloridas e contemporâneas, ampliando suas possibilidades de uso. Seja em peças de destaque ou em acessórios, o Animal Print continua sendo uma aposta atemporal que atravessa temporadas sem perder relevância. Além de sua forte presença nas passarelas, a tendência também se destaca no streetwear e nas redes sociais, sendo constantemente reinterpretada por diferentes gerações. Sua versatilidade permite combinações que vão do visual elegante e sofisticado ao ousado e maximalista, tornando-a uma escolha frequente para quem deseja expressar confiança e autenticidade através da moda.',
         'imagens' => [
             '',
             'https://i.pinimg.com/1200x/7f/e0/75/7fe07558538a31b19d6bdad9b71f00b0.jpg',
@@ -86,7 +86,7 @@ class TendenciasController extends Controller
 
     'polka-dots' => [
         'titulo' => 'Polka Dots',
-        'descricao' => 'A clássica estampa de bolinhas reinventada em propostas modernas, elegantes e divertidas.',
+        'descricao' => 'A tendência Polka Dots, conhecida pelas clássicas estampas de poá, reafirma sua relevância na moda ao unir elegância atemporal e versatilidade. Presente em vestidos, saias, blusas e acessórios, ela transita entre propostas românticas, sofisticadas e contemporâneas. Em suas versões atuais, os poás aparecem em diferentes tamanhos, cores e composições, trazendo um visual renovado sem perder sua identidade clássica. A tendência demonstra como elementos tradicionais podem ser reinterpretados para atender às demandas estéticas da moda contemporânea. Além de sua forte presença em coleções de grandes marcas, os poás também conquistam espaço no cotidiano por sua facilidade de combinação e apelo visual marcante. A estampa é frequentemente associada à feminilidade e ao charme retrô, mas suas releituras modernas permitem composições ousadas e criativas. Dessa forma, os Polka Dots continuam atravessando gerações e temporadas, consolidando-se como um dos padrões mais duradouros e reconhecíveis da história da moda.',
         'imagens' => [
             'https://i.pinimg.com/736x/d5/b0/e0/d5b0e0529444354f42bee4db5cec7d95.jpg',
             'https://i.pinimg.com/736x/01/ea/8d/01ea8d1b1258f54a9d30f11d3f35fc7e.jpg',
@@ -122,7 +122,7 @@ class TendenciasController extends Controller
 
     'cool-culture' => [
         'titulo' => 'Cool Culture',
-        'descricao' => 'Tendências contemporâneas inspiradas por arte, música, internet e comportamento das novas gerações.',
+        'descricao' => 'A Cool Culture é uma tendência que valoriza a autenticidade, a criatividade e a expressão individual por meio da moda. Seu estilo combina referências urbanas, peças contemporâneas e uma estética descomplicada, criando produções que parecem naturalmente estilosas. A proposta vai além das tendências passageiras, priorizando personalidade e confiança na construção da imagem. Marcada pela mistura de influências culturais, artísticas e digitais, a Cool Culture reflete o comportamento de uma geração conectada, diversa e cada vez mais interessada em se destacar de forma genuína. Fortemente impulsionada pelas redes sociais, pela música, pela arte e pelo streetwear, essa tendência incentiva a experimentação e a quebra de padrões tradicionais de estilo. A combinação de peças casuais com elementos sofisticados, além da valorização de referências locais e globais, contribui para sua identidade dinâmica e inovadora. Mais do que uma estética, a Cool Culture representa um modo de vida que celebra a liberdade criativa, a diversidade e a construção de uma imagem autêntica e pessoal.',
         'imagens' => [
             'https://i.pinimg.com/736x/d6/65/f6/d665f6f181a8f739b6013759085361d7.jpg',
             'https://i.pinimg.com/736x/9c/5c/08/9c5c08543c8747d8c38dd7e6a339798c.jpg',
@@ -155,21 +155,73 @@ class TendenciasController extends Controller
 
     'underground' => [
         'titulo' => 'Underground',
-        'descricao' => 'Fotografia de moda, direção criativa e produções visuais que contam histórias através da imagem.',
+        'descricao' => 'Para combater diretamente a estética clean girl, surge a Messy Girl Aesthetic, marcada pelo abandono da perfeição estética em prol de uma autenticidade crua, espontânea e caótica. A cultura noturna, a moda e o design passam a abraçar o imperfeito e o rebelde, mesclando nostalgia com uma atitude de vanguarda. Inspirada por cenas alternativas e movimentos underground, essa tendência valoriza a individualidade, a experimentação e a expressão pessoal acima dos padrões tradicionais de beleza. Elementos aparentemente desorganizados, combinações inesperadas e referências à cultura indie e ao início dos anos 2000 reforçam sua identidade. Mais do que uma estética, ela representa uma forma de resistência à excessiva curadoria das redes sociais e à busca constante por uma imagem impecável.',
         'imagens' => [
-            'https://i.pinimg.com/1200x/43/c0/f6/43c0f65165cbee144fc9856dbb5b598a.jpg',
-            'https://i.pinimg.com/736x/06/90/8d/06908d00e272303270d079c2bb89a3fa.jpg',
-            'https://i.pinimg.com/736x/41/9a/18/419a1888c0c8f1123df916347765cbbe.jpg',
+            'https://i.pinimg.com/736x/32/e5/8d/32e58db301cfb2d85ed2cfd2b738da3d.jpg',
+            'https://i.pinimg.com/736x/d3/a5/54/d3a554df9250db31a20c7de47998ef60.jpg',
+            'https://i.pinimg.com/736x/4c/cd/dc/4ccddc9058179059450fb46695a3a90a.jpg',
+            'https://i.pinimg.com/736x/dd/0d/32/dd0d3207ba56796f713b2c9484f91055.jpg',
+            'https://i.pinimg.com/736x/95/73/31/957331231313352c66b43fbb389a79fc.jpg',
+            'https://i.pinimg.com/736x/a1/f6/60/a1f6607ddc080255c7438f30ae696287.jpg',
+            'https://i.pinimg.com/736x/e7/5f/03/e75f036622ee50f79a93e64fe4281f15.jpg',
+            'https://i.pinimg.com/736x/2d/2d/10/2d2d1090194061bb72ea7080339c3cfb.jpg',
+            'https://i.pinimg.com/736x/1c/f4/4a/1cf44a569b3e280721db14b8f8411f29.jpg',
+            'https://i.pinimg.com/736x/33/fc/7d/33fc7d676a63d3335bce8a6f1be4f125.jpg',
+            'https://i.pinimg.com/736x/a2/af/f2/a2aff246e2d610f0b23aa63efa36c1eb.jpg',
+            'https://i.pinimg.com/736x/e4/ab/fb/e4abfb163bb70c99a56e70cc8156a030.jpg',
+            'https://i.pinimg.com/736x/06/20/d1/0620d1a00285b7b11b91a8d926feb684.jpg',
+            'https://i.pinimg.com/736x/ea/df/97/eadf97e6e9fe9b6c9f7e4d1536135536.jpg',
+            'https://i.pinimg.com/736x/db/86/ed/db86ed46f64cdb3ed8761f7cbfda04ab.jpg',
+            'https://i.pinimg.com/736x/40/37/a6/4037a6ee3a17c08b6512302f34904084.jpg',
+            'https://i.pinimg.com/736x/cb/9b/c9/cb9bc908b3ad135785155f8c72478054.jpg',
+            'https://i.pinimg.com/736x/ea/55/99/ea559949c7311b296303d53184b77677.jpg',
+            'https://i.pinimg.com/736x/1e/58/0f/1e580f91ca95b99e1f5635e07b57b839.jpg',
+            'https://i.pinimg.com/736x/47/91/14/47911488ceffa7309971e06cb92f1bf5.jpg',
+            'https://i.pinimg.com/736x/6b/60/d2/6b60d2d8f6d15ab2e32cefbc76775108.jpg',
+            'https://i.pinimg.com/736x/b6/7b/2d/b67b2db2b17b2a41be40896ac0c551b9.jpg',
+            'https://i.pinimg.com/736x/f4/a5/c1/f4a5c1d318ed2a3416f4793428dac04a.jpg',
+            'https://i.pinimg.com/736x/2c/88/8b/2c888b416336eff07556ba10c972a83a.jpg',
+            'https://i.pinimg.com/1200x/5e/44/e5/5e44e542d2a3c18ec6bfa3742a8de1c0.jpg',
+            'https://i.pinimg.com/1200x/2c/e1/f0/2ce1f030f37b6a6abad03142c32ae3ae.jpg',
+            'https://i.pinimg.com/736x/f4/0d/5c/f40d5c7c3081cacf5a8ae463c6e21f49.jpg',
+            'https://i.pinimg.com/736x/19/c6/b6/19c6b6ebce9f99fb1f059927f16f0470.jpg',
+            'https://i.pinimg.com/736x/54/ae/be/54aebe15abae7c3984d232103c8cbba3.jpg',
+            'https://i.pinimg.com/736x/4f/5a/f5/4f5af510bd29a5542ae33a8bd02b52ac.jpg',
+            'https://i.pinimg.com/736x/85/8e/f0/858ef0279bb5f3543be5a305544436be.jpg',
+            'https://i.pinimg.com/736x/1f/0b/38/1f0b38c7abcf2266fdc104d2add0c576.jpg',
+            'https://i.pinimg.com/736x/cb/a6/df/cba6dfe84aba0ade81a199eaf432fb99.jpg',
+            'https://i.pinimg.com/736x/4a/34/ff/4a34ffaeaf290e710575916b26ff183e.jpg',
         ]
     ],
 
     'vintage' => [
-        'titulo' => 'Vintage',
-        'descricao' => 'Desfiles, passarelas internacionais e as principais tendências apresentadas pelas grandes marcas.',
+        'titulo' => 'Vintage Goth',
+        'descricao' => 'A estética Vintage Goth combina a elegância sombria e macabra de eras históricas, como a cultura de luto vitoriana e eduardiana, com o romantismo e a nostalgia da moda vintage e da arte sombria. Ela enfatiza a melancolia atemporal, a beleza poética e o rico artesanato, em vez das influências cibernéticas ou punk presentes em outras vertentes góticas modernas. Inspirada por antigas fotografias, literatura gótica e elementos arquitetônicos clássicos, essa tendência valoriza detalhes refinados, rendas, veludos, corsets e joias de aparência antiga. Sua estética transmite um ar de mistério, sofisticação e contemplação, resgatando referências do passado para criar uma identidade visual única. Mais do que um estilo de moda, o Vintage Goth representa uma apreciação pela história, pela arte e pela beleza encontrada em temas ligados à nostalgia, ao romantismo e à passagem do tempo.',
         'imagens' => [
-            'https://i.pinimg.com/1200x/fc/40/74/fc407423d9ef6de97df426dabc17c9f6.jpg',
-            'https://i.pinimg.com/1200x/1b/25/7a/1b257a610a46f12330bedcf9ae12d87e.jpg',
-            'https://i.pinimg.com/1200x/08/fd/dc/08fddcb1c3d539b74d26db54b91533c6.jpg',
+            'https://i.pinimg.com/474x/ae/34/a3/ae34a33ecbfecccfdb28a829c244eb5a.jpg',
+            'https://i.pinimg.com/736x/d1/17/1f/d1171f7d3b2ce84744ab1820ed0fc2c2.jpg',
+            'https://i.pinimg.com/736x/c8/72/e2/c872e28cb753edc551ae263256697657.jpg',
+            'https://i.pinimg.com/474x/ac/d9/17/acd917ba0f65e1662fd3e5a092b68b4f.jpg',
+            'https://i.pinimg.com/1200x/2a/0a/27/2a0a278f7cf393425f376c4458df00dd.jpg',
+            'https://i.pinimg.com/736x/b6/22/24/b6222478d59119988dd5b888cc01a073.jpg',
+            'https://i.pinimg.com/736x/81/e8/cc/81e8cc1ac7a8e139eda56662cbe7dd29.jpg',
+            'https://i.pinimg.com/736x/ec/7a/34/ec7a34ab1c7fbc5369f2d09019495d0d.jpg',
+            'https://i.pinimg.com/736x/55/26/4f/55264fbb316782c3cdf3b6ff8471247e.jpg',
+            'https://i.pinimg.com/736x/c9/ea/bf/c9eabfc0aecc7c1f9f73ba8b6db4820a.jpg',
+            'https://i.pinimg.com/736x/e9/97/0d/e9970da7fbbb322174e2a1d58a230e10.jpg',
+            'https://i.pinimg.com/736x/9c/26/4a/9c264ac54fefe46f06fa989528c9d4a7.jpg',
+            'https://i.pinimg.com/736x/3e/b1/97/3eb197f0d0aa039adec3892ec2ec9cb8.jpg',
+            'https://i.pinimg.com/736x/e9/02/e3/e902e3f8f66c88c77ffb5678822935a7.jpg',
+            'https://i.pinimg.com/736x/70/f5/4a/70f54a17fc61e42195509b488ff9dd3d.jpg',
+            'https://i.pinimg.com/736x/37/bb/d0/37bbd0099ae3473e73234d5996845d51.jpg',
+            'https://i.pinimg.com/736x/2e/4a/ea/2e4aea37ef1265c6da86fd9b93eb6ecb.jpg',
+            'https://i.pinimg.com/736x/60/76/2e/60762eb0b1f995805811ed8f6efc8443.jpg',
+            'https://i.pinimg.com/736x/66/bc/61/66bc61f7a0011664afa68cddfd2a3d9f.jpg',
+            'https://i.pinimg.com/736x/87/21/e5/8721e5e19d93c1e92393ea45095dc2cf.jpg',
+            'https://i.pinimg.com/736x/ea/4e/95/ea4e9575e0a8a0bb0631555706d038e2.jpg',
+            'https://i.pinimg.com/736x/31/8a/fe/318afe2861cfc8272308a1942dfcbed1.jpg',
+            'https://i.pinimg.com/736x/c9/ea/bf/c9eabfc0aecc7c1f9f73ba8b6db4820a.jpg',
+            'https://i.pinimg.com/736x/37/7d/8b/377d8bac4892dba4027d9a4221436c19.jpg',
         ]
     ],
 

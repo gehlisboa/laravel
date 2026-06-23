@@ -63,7 +63,7 @@
 <section class="featured-profile">
 
     <div class="profile-left">
-        <img src="https://i.pinimg.com/736x/54/14/7d/54147d2cc993d216221eb806d9cfbb1b.jpg">
+    <img src="{{ asset('logo.png') }}">
     </div>
 
     <div class="profile-right">

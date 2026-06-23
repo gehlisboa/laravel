@@ -76,10 +76,14 @@
 
         </div>
 
-        <button class="follow-btn">Seguir Perfil</button>
-         <a href="{{ route('criar-postagem') }}" class="criar-btn">
-        Criar Post
-    </a>
+        <div class="profile-buttons">
+
+<button class="btn-follow">
+    Seguir Perfil
+</button>
+
+</div>
+
 
     </div>
 

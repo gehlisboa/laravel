@@ -44,10 +44,9 @@
 
 <!-- HERO DA TENDÊNCIA -->
 
-<section class="featured-profile">
+<section class="featured-profile pagina-tendencia">
 
-    <div class="profile-right">
-
+<div class="profile-right conteudo-tendencia">
         
         <h1 class="nome-tendencia">
     {{ $tendencia['titulo'] }}
@@ -61,11 +60,9 @@
             {{ $tendencia['descricao'] }}
         </p>
 
-
-        <a href="{{ route('home') }}">
+<a href="{{ route('home') }}" class="btn-home">
     Voltar para home
 </a>
-
     </div>
 
 </section>
