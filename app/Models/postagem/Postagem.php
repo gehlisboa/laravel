@@ -4,11 +4,11 @@ namespace App\Models\Postagem;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CriarPostagem extends Model
+class Postagem extends Model
 {
     protected $table = 'postagens';
 
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'CodPostagem';
 
     public $timestamps = false;
 

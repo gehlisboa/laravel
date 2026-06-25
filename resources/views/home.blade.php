@@ -31,15 +31,13 @@
     <div class="nav-buttons">
         <a href="/" class="btn-nav">Home</a>
 
-        <a href="{{ route('criar-postagem') }}" class="btn-nav">
-            Criar Post
+        <a href="{{ route('listar-postagem') }}" class="btn-nav">
+                Explorar Posts
         </a>
 
-        <a href="/usuario/1" class="btn-nav">
-            Perfil
-        </a>
-    </div>
-
+    <a href="{{ route('usuario.show', 'cecilia') }}" class="btn-nav">
+    Perfil
+</a>
 </nav>
 <!-- PERFIS EM DESTAQUE -->
 <section class="stories">
@@ -164,7 +162,7 @@
 <footer>
 
     <h3>Atelie De Mode</h3>
-    <p>Conectando criadores de moda.</p>
+    <p>CConectando profissionais da moda.</p>
 
 </footer>
 

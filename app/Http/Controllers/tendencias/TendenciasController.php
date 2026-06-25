@@ -39,8 +39,18 @@ class TendenciasController extends Controller
             'https://i.pinimg.com/736x/70/db/64/70db646df141f015a53988fe22da36c7.jpg',
             'https://i.pinimg.com/1200x/f1/8f/64/f18f64c7a4ff25f398bc168188a7c48d.jpg',
             'https://i.pinimg.com/736x/51/b3/80/51b3802aa7057bcaea258fa69de7e35f.jpg',
-            'https://i.pinimg.com/736x/89/59/73/8959734d697054b25f4e0ce78b480ee1.jpg'
-
+            'https://i.pinimg.com/736x/89/59/73/8959734d697054b25f4e0ce78b480ee1.jpg',
+            'https://i.pinimg.com/736x/22/72/3a/22723a623174aeb05477340a8dd27857.jpg',
+            'https://i.pinimg.com/736x/f1/d2/ba/f1d2ba035e910884449bdb062ad3b510.jpg',
+            'https://i.pinimg.com/736x/2f/d9/f9/2fd9f9c69baf0a12d343e9f97cff8193.jpg',
+            'https://i.pinimg.com/736x/e4/89/04/e489045cf73be8cea39c8fab09369ec1.jpg',
+            'https://i.pinimg.com/736x/90/89/9f/90899f5e57a948f29fad4d7d23f49e9e.jpg',
+            'https://i.pinimg.com/736x/44/5f/12/445f12d07ad3bd90ce1e403eb2d5a409.jpg',
+            'https://i.pinimg.com/736x/3b/4c/20/3b4c207f835baa16e9aecc12de056020.jpg',
+            'https://i.pinimg.com/736x/e7/cb/9e/e7cb9e4a8b5f365595760c05b258ae1d.jpg',
+            'https://i.pinimg.com/736x/1c/61/11/1c61111f07b9f16dbc196001e29e9b92.jpg',
+            'https://i.pinimg.com/736x/58/48/b8/5848b8a8e410d046a2f4008bf05b7fed.jpg',
+            'https://i.pinimg.com/736x/b1/63/60/b163605c9c6d9b7a6497a43d451e5cf9.jpg'
         ]
     ],
 
@@ -48,7 +58,6 @@ class TendenciasController extends Controller
         'titulo' => 'Animal Print',
         'descricao' => 'O Animal Print permanece como uma das tendências mais icônicas e versáteis da moda, destacando-se por sua capacidade de transmitir personalidade, sofisticação e atitude. Entre as principais estampas estão a oncinha (leopard print), a zebra, a cobra (snake print), o tigre e a vaca (cow print), cada uma com características visuais únicas que se adaptam a diferentes estilos. Atualmente, essas padronagens aparecem tanto em versões clássicas quanto em releituras coloridas e contemporâneas, ampliando suas possibilidades de uso. Seja em peças de destaque ou em acessórios, o Animal Print continua sendo uma aposta atemporal que atravessa temporadas sem perder relevância. Além de sua forte presença nas passarelas, a tendência também se destaca no streetwear e nas redes sociais, sendo constantemente reinterpretada por diferentes gerações. Sua versatilidade permite combinações que vão do visual elegante e sofisticado ao ousado e maximalista, tornando-a uma escolha frequente para quem deseja expressar confiança e autenticidade através da moda.',
         'imagens' => [
-            '',
             'https://i.pinimg.com/1200x/7f/e0/75/7fe07558538a31b19d6bdad9b71f00b0.jpg',
             'https://i.pinimg.com/1200x/d1/dd/97/d1dd972d7c64ead7956505d37f95ed02.jpg',
             'https://i.pinimg.com/736x/57/6e/27/576e27e1c320148cab22406a08614045.jpg',
@@ -80,7 +89,20 @@ class TendenciasController extends Controller
             'https://i.pinimg.com/736x/8a/80/fa/8a80fa30cb896a0633e57d0dc73c5764.jpg',
             'https://i.pinimg.com/736x/6f/4d/6c/6f4d6c735017ad6f8fb137065e7dcbd0.jpg',
             'https://i.pinimg.com/736x/c5/95/9b/c5959bc1575a574ae8eadcb12dbee162.jpg',
-            'https://i.pinimg.com/1200x/ec/13/dd/ec13ddb052aaf73fdef8310dae9ba9e8.jpg'
+            'https://i.pinimg.com/1200x/ec/13/dd/ec13ddb052aaf73fdef8310dae9ba9e8.jpg',
+            'https://i.pinimg.com/736x/fc/e7/a7/fce7a710238d879b39cce299dddcab8a.jpg',
+            'https://i.pinimg.com/736x/93/6d/cd/936dcd9d740a40321d83278c29f83965.jpg',
+            'https://i.pinimg.com/736x/ef/e4/55/efe455a751c8e89863d0fc02459bacf2.jpg',
+            'https://i.pinimg.com/736x/d9/aa/30/d9aa308e43358ecd1f5b47f2420feb16.jpg',
+            'https://i.pinimg.com/736x/7e/2c/01/7e2c010d44624ba8eaffa9a03c05f144.jpg',
+            'https://i.pinimg.com/736x/8d/0f/84/8d0f846b8f943beb0e561f7ddb37be05.jpg',
+            'https://i.pinimg.com/736x/8d/68/28/8d6828b411bdb072000a64fd0813bc46.jpg',
+            'https://i.pinimg.com/736x/38/27/76/382776c5923ed876cb0a0bb576e0dde3.jpg',
+            'https://i.pinimg.com/736x/ac/43/7d/ac437d0590df611fb52fd90f9aa5642b.jpg',
+            'https://i.pinimg.com/736x/5a/3f/f3/5a3ff3449d702ef0b7f9363fa05ed60a.jpg',
+            'https://i.pinimg.com/736x/63/52/0e/63520e676660c294a97eb828763703ed.jpg',
+            'https://i.pinimg.com/736x/9b/26/c1/9b26c1de01fd8ac9761a74e7f8cfd644.jpg',
+            'https://i.pinimg.com/736x/01/24/52/01245240322ac8b6e5313b845dadc8ad.jpg'
         ]
     ],
 
@@ -116,8 +138,25 @@ class TendenciasController extends Controller
             'https://i.pinimg.com/736x/f0/d2/40/f0d2406af0ee937652fcc0eaaad1c62d.jpg',
             'https://i.pinimg.com/1200x/0d/fb/5b/0dfb5bf326d54b65cae608f246400ea0.jpg',
             'https://i.pinimg.com/1200x/a3/be/69/a3be6985bf51f3d8f7b725641234190c.jpg',
-            'https://i.pinimg.com/1200x/fa/e9/25/fae925b5d323de838f9320218700d830.jpg'
-        ]
+            'https://i.pinimg.com/1200x/fa/e9/25/fae925b5d323de838f9320218700d830.jpg',
+            'https://i.pinimg.com/736x/11/eb/23/11eb23294a85808cc76f677ba9d6bcb1.jpg',
+            'https://i.pinimg.com/1200x/79/e2/4e/79e24e03f3e0c3e278b8c3df9347f62a.jpg',
+            'https://i.pinimg.com/736x/f2/62/72/f2627284257d30d63cb8286877ab3275.jpg',
+            'https://i.pinimg.com/736x/fd/bb/0d/fdbb0d969f80926f3b7bb51a9a9cabd0.jpg',
+            'https://i.pinimg.com/736x/41/f0/8c/41f08cd2e120b63d00b70e227a1bc460.jpg',
+            'https://i.pinimg.com/736x/dd/be/d4/ddbed4fca417c6a6119e9a3985dd77ed.jpg',
+            'https://i.pinimg.com/736x/b0/70/c4/b070c45ef47c331b621cf1144908eda7.jpg',
+            'https://i.pinimg.com/736x/c0/31/3a/c0313a1a52141e06b0a5a4052ea9c354.jpg',
+            'https://i.pinimg.com/736x/47/32/20/47322086bbe9233f5739ebc60e630c06.jpg',
+            'https://i.pinimg.com/736x/c4/13/aa/c413aa50a35d955f1ee260a85fd7f413.jpg',
+            'https://i.pinimg.com/736x/b4/52/c9/b452c90ca84a030f50a98fa48ded091a.jpg',
+            'https://i.pinimg.com/736x/1d/7b/ef/1d7bef65c5ae6e8a4a5a132f2a3686bc.jpg',
+            'https://i.pinimg.com/736x/6a/96/bf/6a96bf6ff9ebd37f60655bf0ef75f0fd.jpg',
+            'https://i.pinimg.com/736x/70/c0/3d/70c03de6cb3c789921fb09c6c0453f7f.jpg',
+            'https://i.pinimg.com/736x/d6/b2/6e/d6b26ea14f05ac87e923df39a654a506.jpg',
+            'https://i.pinimg.com/736x/f9/d8/cc/f9d8cc9d66ef4633030bb18fe4636a38.jpg',
+            'https://i.pinimg.com/736x/17/2d/b1/172db1e40d175f77ca3e6c1bde691abf.jpg'
+     ]
     ],
 
     'cool-culture' => [
@@ -148,8 +187,32 @@ class TendenciasController extends Controller
             'https://i.pinimg.com/736x/91/c4/3f/91c43fbdc68db4a8eaecced7b3a1aed9.jpg',
             'https://i.pinimg.com/736x/20/62/77/2062773293b59e0f09dc142d6c3b5a3b.jpg',
             'https://i.pinimg.com/736x/86/be/ef/86beef096544f4acf4564482bf6b9c69.jpg',
-            'https://i.pinimg.com/736x/fa/63/fe/fa63fe5cc7004ac180e80097bf39957e.jpg'
-           
+            'https://i.pinimg.com/736x/fa/63/fe/fa63fe5cc7004ac180e80097bf39957e.jpg',
+            'https://i.pinimg.com/736x/83/9a/86/839a8664a687069f28054491a4ad35a5.jpg',
+            'https://i.pinimg.com/736x/6d/d7/74/6dd77477a0cff64b5a672ac852dd04df.jpg',
+            'https://i.pinimg.com/736x/d6/15/9e/d6159ec1494b1cf90c73d24a7242e8a5.jpg',
+            'https://i.pinimg.com/736x/1a/44/46/1a4446763027a481c64a31b5ed10535e.jpg',
+            'https://i.pinimg.com/736x/4b/bc/04/4bbc046aa14027eab882b695ae270a89.jpg',
+            'https://i.pinimg.com/474x/be/98/b2/be98b2a1e46fe4ac132cb3d479c699aa.jpg',
+            'https://i.pinimg.com/736x/34/57/27/34572716bb6bc057603d3a41b552b94f.jpg',
+            'https://i.pinimg.com/736x/41/57/58/4157587a9686de1b4ad7e1d789af37cc.jpg',
+            'https://i.pinimg.com/736x/41/2a/53/412a53d4f1df1a9b00f9f8fea3d27051.jpg',
+            'https://i.pinimg.com/474x/c3/f1/23/c3f1239da6e4b28a0d8e8af3c84397ac.jpg',
+            'https://i.pinimg.com/736x/82/1a/4b/821a4b6a617d1b5edbcaf8275c03b626.jpg',
+            'https://i.pinimg.com/736x/06/af/51/06af5166b4058abf18f91eb4b011c3a2.jpg',
+            'https://i.pinimg.com/736x/53/29/fb/5329fb4e480401da19f1e16501197ccd.jpg',
+            'https://i.pinimg.com/736x/e8/f2/5c/e8f25ca62555da19984e45932071a8a3.jpg',
+            'https://i.pinimg.com/736x/4c/d3/90/4cd390b4790ddb66820edca504d9638b.jpg',
+            'https://i.pinimg.com/736x/3a/df/f8/3adff8943938a65baea67733ddffcaf2.jpg',
+            'https://i.pinimg.com/736x/b0/ec/42/b0ec42363b696c316794a3898ea80bd4.jpg',
+            'https://i.pinimg.com/736x/f1/4d/63/f14d63a5e6bf7612b844344d4415fd71.jpg',
+            'https://i.pinimg.com/736x/a2/92/0b/a2920b21e7180fdfd8c76917476573f5.jpg',
+            'https://i.pinimg.com/736x/be/c8/9f/bec89f4b6f21869661c87519f6003750.jpg',
+            'https://i.pinimg.com/736x/6e/4f/db/6e4fdbc1ce12b10639cf255021a0e4db.jpg',
+            'https://i.pinimg.com/736x/eb/bb/c3/ebbbc3178bea7f39b38d524bf1131800.jpg',
+            'https://i.pinimg.com/736x/49/f7/81/49f7818d714de0970a7e6245a94af005.jpg',
+            'https://i.pinimg.com/1200x/a7/55/ad/a755adbed7b7232c64fc1d75f8a560c1.jpg',
+            'https://i.pinimg.com/736x/b5/5f/97/b55f978aec3a34494c6011353348bb4e.jpg'
         ]
     ],
 
@@ -198,11 +261,13 @@ class TendenciasController extends Controller
         'titulo' => 'Vintage Goth',
         'descricao' => 'A estética Vintage Goth combina a elegância sombria e macabra de eras históricas, como a cultura de luto vitoriana e eduardiana, com o romantismo e a nostalgia da moda vintage e da arte sombria. Ela enfatiza a melancolia atemporal, a beleza poética e o rico artesanato, em vez das influências cibernéticas ou punk presentes em outras vertentes góticas modernas. Inspirada por antigas fotografias, literatura gótica e elementos arquitetônicos clássicos, essa tendência valoriza detalhes refinados, rendas, veludos, corsets e joias de aparência antiga. Sua estética transmite um ar de mistério, sofisticação e contemplação, resgatando referências do passado para criar uma identidade visual única. Mais do que um estilo de moda, o Vintage Goth representa uma apreciação pela história, pela arte e pela beleza encontrada em temas ligados à nostalgia, ao romantismo e à passagem do tempo.',
         'imagens' => [
+            'https://i.pinimg.com/736x/f5/5a/32/f55a3264220e2c4f6b29be89594f48fe.jpg',
             'https://i.pinimg.com/474x/ae/34/a3/ae34a33ecbfecccfdb28a829c244eb5a.jpg',
             'https://i.pinimg.com/736x/d1/17/1f/d1171f7d3b2ce84744ab1820ed0fc2c2.jpg',
             'https://i.pinimg.com/736x/c8/72/e2/c872e28cb753edc551ae263256697657.jpg',
             'https://i.pinimg.com/474x/ac/d9/17/acd917ba0f65e1662fd3e5a092b68b4f.jpg',
             'https://i.pinimg.com/1200x/2a/0a/27/2a0a278f7cf393425f376c4458df00dd.jpg',
+            'https://i.pinimg.com/736x/a1/7e/f0/a17ef0f78d9049d2b25e81e2bdb6b7fa.jpg',
             'https://i.pinimg.com/736x/b6/22/24/b6222478d59119988dd5b888cc01a073.jpg',
             'https://i.pinimg.com/736x/81/e8/cc/81e8cc1ac7a8e139eda56662cbe7dd29.jpg',
             'https://i.pinimg.com/736x/ec/7a/34/ec7a34ab1c7fbc5369f2d09019495d0d.jpg',
@@ -222,6 +287,26 @@ class TendenciasController extends Controller
             'https://i.pinimg.com/736x/31/8a/fe/318afe2861cfc8272308a1942dfcbed1.jpg',
             'https://i.pinimg.com/736x/c9/ea/bf/c9eabfc0aecc7c1f9f73ba8b6db4820a.jpg',
             'https://i.pinimg.com/736x/37/7d/8b/377d8bac4892dba4027d9a4221436c19.jpg',
+            'https://i.pinimg.com/736x/7a/c9/73/7ac97395b7313a0f681c06ed116db097.jpg',
+            'https://i.pinimg.com/736x/07/4f/1a/074f1a8704cc6ad158167ba62ae518ff.jpg',
+            'https://i.pinimg.com/736x/e4/36/65/e43665aca11fd24b7ce94d350e1939e9.jpg',
+            'https://i.pinimg.com/736x/54/8a/8d/548a8d3178a3f265c48dd71930bd6e5c.jpg',
+            'https://i.pinimg.com/736x/0b/0f/18/0b0f18a3b2983d291f566fc0acf327a2.jpg',
+            'https://i.pinimg.com/736x/d5/d6/38/d5d6384d5fb7057ced89fed63955caec.jpg',
+            'https://i.pinimg.com/736x/f9/c6/3d/f9c63d8734d8edf784fd7d7614ad82e1.jpg',
+            'https://i.pinimg.com/736x/d3/00/be/d300bef116ccd02d596fa38d18575726.jpg',
+            'https://i.pinimg.com/736x/b1/e2/50/b1e25098617411b9c82c696a51723993.jpg',
+            'https://i.pinimg.com/736x/bf/3f/ed/bf3fedac83118537bc69a6266d542b53.jpg',
+            'https://i.pinimg.com/736x/0a/cd/34/0acd34062ee23ed7f6820249059a86da.jpg',
+            'https://i.pinimg.com/736x/f9/13/14/f91314a37a7eaca4eb2ca020d6087ede.jpg',
+            'https://i.pinimg.com/736x/fe/71/3c/fe713c064a7b0d71eb8ba1354f5e1c90.jpg',
+            'https://i.pinimg.com/736x/11/e2/05/11e2057509650c8bb6ef706f4c279284.jpg',
+            'https://i.pinimg.com/736x/21/db/51/21db51fa7c697c03e530f38361201196.jpg',
+            'https://i.pinimg.com/736x/c6/e4/fe/c6e4fe3b5ce3a1ebe317d6df169a3f05.jpg',
+            'https://i.pinimg.com/736x/08/67/d7/0867d7606c8888fa75c18e09e3493af4.jpg',
+            'https://i.pinimg.com/736x/18/b4/60/18b460463176bf4605229f0811c86b2b.jpg',
+            'https://i.pinimg.com/736x/6e/59/25/6e59258447cd15b57122e951d44ebe66.jpg',
+            ''
         ]
     ],
 

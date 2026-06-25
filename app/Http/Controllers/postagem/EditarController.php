@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Postagem;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Postagem\EditarPostagem;
+use App\Models\Postagem\Postagem;
 
 class EditarController extends Controller
 {
@@ -15,7 +15,7 @@ class EditarController extends Controller
 
     public function update(Request $request)
     {
-        $postagem = EditarPostagem::find($request->CodPostagem);
+        $postagem = Postagem::find($request->CodPostagem);
 
         if (!$postagem) {
             return back()->with('erro', 'Postagem não encontrada.');

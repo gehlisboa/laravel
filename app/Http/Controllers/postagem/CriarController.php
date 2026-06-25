@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Postagem;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Postagem\CriarPostagem;
+use App\Models\Postagem\Postagem;
 
 class CriarController extends Controller
 {
@@ -15,10 +15,10 @@ class CriarController extends Controller
 
     public function store(Request $request)
     {
-        CriarPostagem::create([
+        Postagem::create([
             'Titulo'   => $request->Titulo,
             'Conteudo' => $request->Conteudo,
-            'User'    => $request->User,
+            'User'     => $request->User,
             'Imagem'   => $request->Imagem
         ]);
 

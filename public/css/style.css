@@ -5,13 +5,20 @@
     }
     
     body{
-        font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     background:#f7f2ee;
     color:#222;
     }
+
+    .logo-container{
+    display:flex;
+    flex-direction:column;
+}
+
+
     
     /* NAVBAR */
     
@@ -23,28 +30,10 @@
     align-items:center;
     box-shadow:0 3px 15px rgba(0,0,0,.08);
     position:sticky;
-    top:0;
-    z-index:999;
     }
+    
     
 
-    .logo-container{
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        width:180px;
-    }
-    
-    .titulo{
-        display:block;
-        line-height:1;
-    }
-    
-    .subtitulo{
-        display:block;
-        line-height:1;
-        margin-top:-8px;
-    }
    /* FONTES */
    .stories h2,
    .tendencias h2,
@@ -54,23 +43,19 @@
     font-size:22px;
     font-weight:600;
     color:#797373;
-
     letter-spacing:2px;
     text-transform:uppercase;
-
     margin-top:-5px;
     margin-bottom:20px;
     text-align: center
    }
 
-   
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Pinyon+Script&display=swap');
 
 /* ==========================
    LOGO NAVBAR
 ========================== */
 
-.titulo{
+.titulo {
     font-family:'Cinzel', serif;
     font-size:24px;
     font-weight:700;
@@ -90,21 +75,26 @@
     line-height:1;
 }
 
-.subtitulo{
+.subtitulo,
+.destaque-tendencia,
+.page-feed .feed-content h3,
+.page-feed .feed-hero-right h1{
     font-family:'Pinyon Script', cursive;
-    font-size:34px;
+    font-size:38px;
     color:#d89ca8;
-
+    display:block;
+    margin-top:-8px;
     margin-top:-6px;
     line-height:1;
 }
-.username{
-    font-family:'Pinyon Script', cursive;
-    font-size:48px;
-    color:#d89ca8;
-    font-weight:400;
 
-    margin-bottom:0;
+footer h3{
+    font-family:'Pinyon Script', cursive;
+    font-size:38px;
+    color:#d89ca8;
+    display:block;
+    margin-top:-8px;
+    margin-top:-6px;
     line-height:1;
 }
 
@@ -113,13 +103,12 @@
     font-size:16px;
     font-weight:600;
     color:#797373;
-
     letter-spacing:2px;
     text-transform:uppercase;
-
     margin-top:5px;
     margin-bottom:20px;
 }
+
 
 /* ==========================
    COMMUNITY
@@ -157,66 +146,19 @@
 
     line-height:1;
 }
+
 .profile-right h3{
     font-family:'Cinzel', serif;
     font-size:22px;
     font-weight:600;
     color:#797373;
-
     letter-spacing:2px;
     text-transform:uppercase;
-
     margin-top:-5px;
     margin-bottom:20px;
 }
 
-/* NOME DA TENDÊNCIA */
 
-.nome-tendencia{
-    font-family:'Cinzel', serif;
-    font-size:48px;
-    font-weight:700;
-
-    background:linear-gradient(
-        180deg,
-        #2f2f2f 0%,
-        #7a7a7a 35%,
-        #b0b0b0 50%,
-        #7a7a7a 65%,
-        #2f2f2f 100%
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    margin-bottom:0;
-    line-height:1.1;
-}
-
-/* TEXTO ROSA EM DESTAQUE */
-
-.destaque-tendencia{
-    font-family:'Pinyon Script', cursive;
-    font-size:42px;
-    color:#d89ca8;
-
-    margin-top:-5px;
-    margin-bottom:20px;
-
-    line-height:1;
-}
-/* ==========================
-   FOOTER
-========================== */
-
-footer h3{
-    font-family:'Pinyon Script', cursive;
-    font-size:42px;
-    color:#d89ca8;
-    font-weight:400;
-    margin-bottom:10px;
-}
-    
     .navbar-fashion input{
     width:40%;
     padding:12px;
@@ -299,15 +241,7 @@ footer h3{
     object-fit:cover;
     border-radius:25px;
     }
-    
-    .profile-right{
-    max-width:600px;
-    }
 
-    
-    .pagina-tendencia{
-        justify-content:center;
-    }
     
     .conteudo-tendencia{
         text-align:center;
@@ -341,6 +275,7 @@ footer h3{
     padding-top:20px;
     margin-bottom: 40px;
 }
+
 .feed-section,
 .tendencias{
     margin-top: -40px;
@@ -367,12 +302,6 @@ footer h3{
     padding:60px 8%;
 }
 
-.tendencias h3{
-    margin-bottom:25px;
-    font-size:32px;
-    font-weight:700;
-    text-align:center;
-}
 
 .mood-grid{
     display:flex;
@@ -385,15 +314,11 @@ footer h3{
     flex:1;
     min-width:0;
     height:124px;
-
     border-radius:20px;
     overflow:hidden;
-
     position:relative;
-
     background-size:cover;
     background-position:center;
-
     transition:.3s;
     box-shadow:0 6px 15px rgba(0,0,0,.12);
 }
@@ -412,21 +337,17 @@ footer h3{
 .mood-card a{
     width:100%;
     height:100%;
-
+     font-family:'Pinyon Script', cursive;
+    color: #ffffff;
+    font-weight: 500;
+   text-shadow: 0 2px 8px rgba(0,0,0,.35);
+    font-size: 2.2rem;
     display:flex;
     justify-content:center;
     align-items:center;
-
-    text-decoration:none;
-
-    color:white;
-    font-size:18px;
-    font-weight:600;
     text-align:center;
     padding:10px;
-
     position:relative;
-    z-index:2;
 }
 
 /* IMAGENS */
@@ -452,7 +373,7 @@ footer h3{
 }
 
 .vintage{
-    background-image:url('https://i.pinimg.com/1200x/24/c9/f7/24c9f7ee7e253fca6138552f1c8628a4.jpg');
+    background-image:url('https://i.pinimg.com/736x/af/dd/54/afdd5462059e8ad30f7b9e1dddfb1a46.jpg');
 }
 
 footer{
@@ -534,43 +455,8 @@ footer{
      LISTAGEM DE POSTS
   ========================== */
   
-  .posts-grid{
-  
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
-    gap:25px;
     
-    }
-    
-    .post-card{
-    
-    background:white;
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:.3s;
-    
-    }
-    
-    .post-card:hover{
-    
-    transform:translateY(-5px);
-    
-    }
-    
-    .post-img{
-    
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    
-    }
-    
-    .post-content{
-    
-    padding:25px;
-    
-    }
+
     
     .post-author{
     
@@ -585,251 +471,247 @@ footer{
     
     }
     
-    .post-content h3{
-    
-    font-size:24px;
-    margin-bottom:15px;
-    
-    }
-    
-    .post-content p{
-    
-    color:#666;
-    line-height:1.6;
-    margin-bottom:20px;
-    
-    }
-    
-    .post-content small{
-    
-    display:block;
-    margin-bottom:20px;
-    color:#999;
-    
-    }
-    
-    .post-buttons{
-    
-    display:flex;
-    gap:10px;
-    
-    }
-    
-    .btn-edit{
-    
-    background:#222;
-    color:white;
-    padding:10px 20px;
-    border-radius:30px;
-    text-decoration:none;
-    
-    }
-    
-    .btn-delete{
-    
-    background:#d89ca8;
-    color:white;
-    padding:10px 20px;
-    border-radius:30px;
-    text-decoration:none;
-    
-    }
-
-
-    .botao {
-       display: inline-block;
-    margin-top: 30px !important;
-    padding: 20px 20px;
-    border-radius: 12px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.2s;
-}
 
 a {
     text-decoration: none;
 }
 
 
-.botao:hover {
-    transform: scale(1.05);
+    /* FORM MENOR*/
+  
+.publish-card {
+   max-width: 900px;
+    margin: 40px auto;
+
+    padding: 24px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(6px);
 }
-    
-    .btn-edit:hover,
-    .btn-delete:hover{
-    
-    opacity:.9;
-    
-    }
-  
-    /* EDITAR POSTAGEM */
-  
-  .edit-header{
-    padding:60px 8% 30px;
-    text-align:center;
-    }
-    
-    .edit-header h1{
-    font-size:48px;
-    font-weight:700;
-    margin-bottom:10px;
-    }
-    
-    .edit-header p{
-    color:#777;
-    font-size:18px;
-    }
-    
-    .edit-section{
-    padding:20px 8% 80px;
-    display:flex;
-    justify-content:center;
-    }
-    
-    .edit-card{
-    background:white;
-    width:100%;
-    max-width:900px;
-    padding:40px;
-    border-radius:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    }
-    
-    .edit-card label{
-    font-weight:600;
-    margin-bottom:8px;
-    }
-    
-    .edit-card .form-control{
-    border:none;
-    background:#f2f2f2;
-    padding:14px;
-    border-radius:15px;
-    }
-    
-    .edit-card textarea{
-    resize:none;
-    }
-    
-    .save-btn{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:30px;
-    background:#d89ca8;
-    color:white;
-    font-weight:600;
-    font-size:16px;
-    transition:.3s;
-    }
-    
-    .save-btn:hover{
-    transform:translateY(-2px);
-    background:#c98895;
-    }
- 
+
+/* FORM ORGANIZADO EM COLUNA */
+.publish-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* =========================
+   LABELS
+========================= */
+.publish-card label {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7a6f76;
+    display: block;
+    margin: 6px 0 6px 0;
+}
+
+/* =========================
+   INPUTS E TEXTAREA
+========================= */
+.publish-card input,
+.publish-card textarea {
+    width: 100%;
+    display: block;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgb(255, 214, 228);
+    background: rgba(255, 255, 255, 0.8);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.25s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* FOCUS BONITO */
+.publish-card input:focus,
+.publish-card textarea:focus {
+
+    border-color: #d89ca8;
+
+    box-shadow: 0 0 0 3px rgba(216, 156, 168, 0.25);
+
+    background: #fff;
+
+    transform: translateY(-1px);
+}
 
 
-    /* PUBLICAR PROJETO */
-  
-  .publish-hero{
-    padding:70px 8% 30px;
-    text-align:center;
-    }
-    
-    .publish-hero h1{
-    font-size:52px;
-    font-weight:700;
-    margin-bottom:15px;
-    }
-    
-    .publish-hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:18px;
-    color:#666;
-    line-height:1.8;
-    }
-    
-    .publish-section{
-    padding:20px 8% 80px;
-    display:flex;
-    justify-content:center;
-    }
-    
-    .publish-card{
-    background:white;
-    max-width:900px;
-    width:100%;
-    padding:40px;
-    border-radius:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    }
-    
-    .publish-card label{
-    font-weight:600;
-    margin-bottom:8px;
-    }
-    
-    .publish-card .form-control{
-    border:none;
-    background:#f2f2f2;
-    border-radius:15px;
-    padding:14px;
-    }
-    
-    .publish-card textarea{
-    resize:none;
-    }
-    
-    .publish-btn{
-    width:100%;
-    border:none;
-    padding:16px;
-    border-radius:30px;
-    background:#d89ca8;
-    color:white;
-    font-weight:600;
-    font-size:16px;
-    transition:.3s;
-    }
-    
-    .publish-btn:hover{
-    background:#c98895;
-    transform:translateY(-2px);
-    }
+/* TEXTAREA MAIOR E MELHOR */
+.publish-card textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+
+
+.publish-card button:hover {
+    transform: translateY(-2px);
+    background: #c98996;
+}
+
+
+/* =========================
+   HERO DA PUBLICAÇÃO
+========================= */
+.publish-hero {
+    max-width: 720px;
+    margin: 40px auto 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* TÍTULO MANUSCRITO ROSA */
+.publish-hero h1 {
+     font-family:'Pinyon Script', cursive;
+    font-size: 42px;
+    font-weight: 500;
+    color: #d89ca8; /* rosinha elegante */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
 
 /* BOTÕES BASE (CORRIGIDO) */
 
 .btn-follow,
+.btn-style,
+.publish-card button,
 .btn-criar,
 .btn-home{
     display:inline-block;
     margin-top:25px;
-
     padding:14px 32px;
-
     font-family:'Cinzel', serif;
     font-size:14px;
     font-weight:600;
     letter-spacing:2px;
     text-transform:uppercase;
-
     color:#fff;
-
     border:none;
     border-radius:30px;
-
     text-decoration:none;
-
     cursor:pointer;
-
     transition:all .3s ease;
-
     position:relative;
     overflow:hidden;
-
     background:#d89ca8; /* <- GARANTE QUE NÃO FIQUE BRANCO */
     box-shadow:0 6px 18px rgba(216,156,168,.35);
 }
+
+
+
+/* ================= HERO ================= */
+.page-feed .feed-hero {
+    max-width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-feed .feed-hero-left img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.page-feed .feed-stats div {
+    background: rgba(255,255,255,0.7);
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+/* ================= FEED ================= */
+
+.page-feed .feed-grid {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.page-feed .feed-card {
+    background: rgba(255,255,255,0.8);
+    border-radius: 16px;
+    overflow: hidden;
+
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.page-feed .feed-card:hover {
+    transform: translateY(-4px);
+}
+
+.page-feed .feed-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.page-feed .feed-content {
+    padding: 14px;
+}
+
+.page-feed .feed-hero-right h1 {
+
+    font-size: 46px;
+   
+    
+}
+
+
+.page-feed .feed-author {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #a38b8b;
+}
+
+.page-feed .feed-edit{
+    display:inline-block;
+    padding:10px 25px;
+    font-family:'Cinzel', serif;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    transition:all .3s ease;
+    position:relative;
+    overflow:hidden;
+    background:#d89ca8; 
+    box-shadow:0 6px 18px rgba(216,156,168,.35);
+}
+
+
+
+

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,137 +7,106 @@
 
     <title>Editar Postagem</title>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Pinyon+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar-fashion">
 
-    <nav class="navbar-fashion">
-    <div class="logo">Atelie De Mode</div>
+    <div class="logo-container">
+        <span class="titulo">Atelie</span>
+        <span class="subtitulo">De Mode</span>
+    </div>
 
     <input type="text" placeholder="Buscar projetos, tendências, estilistas...">
 
     <div class="nav-buttons">
-        <a href="/" class="btn-nav">Home
-    </a>
+        <a href="/" class="btn-nav">Home</a>
 
-    <a href="{{ route('criar-postagem') }}" class="btn-nav">
-        Criar Post
-    </a>
+        <a href="{{ route('listar-postagem') }}" class="btn-nav">
+                Explorar Posts
+        </a>
 
-    <a href="/usuario/1" class="btn-nav">
-        Perfil
-    </a>
-    </div>
+    <a href="{{ route('usuario.show', 'cecilia') }}" class="btn-nav">
+    Perfil
+</a>
 </nav>
 
-    <!-- HERO -->
+<!-- ================= HERO ================= -->
+<section class="publish-hero">
 
-    <section class="edit-header">
+    <h1>Editar Postagem</h1>
 
-        <h1>Editar Postagem</h1>
+    <p>
+        Atualize suas ideias, refine o conteúdo e mantenha sua publicação sempre atual.
+    </p>
 
-        <p>
-            Atualize as informações da postagem de forma rápida e organizada.
-        </p>
+</section>
 
-    </section>
+<!-- ================= FORM ================= -->
+<section class="publish-section">
 
-    <!-- FORMULÁRIO -->
+    <div class="publish-card">
 
-    <section class="edit-section">
+        @if(session('sucesso'))
+            <p style="color:#d89ca8;font-weight:600;margin-bottom:10px;">
+                {{ session('sucesso') }}
+            </p>
+        @endif
 
-        <div class="edit-card">
+        @if(session('erro'))
+            <p style="color:#b86f81;font-weight:600;margin-bottom:10px;">
+                {{ session('erro') }}
+            </p>
+        @endif
 
-            @if(session('sucesso'))
-                <p>{{ session('sucesso') }}</p>
-            @endif
+        <form action="{{ route('atualizar-postagem') }}" method="POST">
 
-            @if(session('erro'))
-                <p>{{ session('erro') }}</p>
-            @endif
+            @csrf
+            @method('PUT')
 
-            <form action="{{ route('atualizar-postagem') }}" method="POST">
+            <label>Código da Postagem</label>
+            <input type="number" name="CodPostagem" placeholder="ID da postagem" required>
 
-                @csrf
-                @method('PUT')
+            <label>Título</label>
+            <input type="text" name="Titulo" placeholder="Digite o título">
 
-                <label>Código da Postagem</label>
+            <label>Conteúdo</label>
+            <textarea name="Conteudo" rows="6" placeholder="Digite o conteúdo"></textarea>
 
-                <input
-                    type="number"
-                    name="CodPostagem"
-                    class="form-control"
-                    placeholder="ID da postagem"
-                    required>
+            <label>Usuário</label>
+            <input type="text" name="User" placeholder="Nome do usuário">
 
-                <br><br>
+            <label>URL da Imagem</label>
+            <input type="text" name="Imagem" placeholder="https://exemplo.com/imagem.jpg">
 
-                <label>Título</label>
+            <button type="submit" class="btn-style">
+                Salvar Alterações
+            </button>
 
-                <input
-                    type="text"
-                    name="Titulo"
-                    class="form-control"
-                    placeholder="Digite o título">
+        </form>
 
-                <br><br>
+    </div>
 
-                <label>Conteúdo</label>
+</section>
 
-                <textarea
-                    name="Conteudo"
-                    rows="6"
-                    class="form-control"
-                    placeholder="Digite o conteúdo"></textarea>
+<!-- ================= FOOTER ================= -->
+<footer class="feed-footer">
 
-                <br><br>
+    <h3>Ateliê de Mode</h3>
 
-                <label>User</label>
+    <p>Conectando profissionais da moda.</p>
 
-                <input
-                    type="text"
-                    name="User"
-                    class="form-control"
-                    placeholder="Nome do usuário">
-
-                <br><br>
-
-                <label>URL da Imagem</label>
-
-                <input
-                    type="text"
-                    name="Imagem"
-                    class="form-control"
-                    placeholder="https://exemplo.com/imagem.jpg">
-
-                <br><br>
-
-                <button type="submit" class="save-btn">
-                    Salvar Alterações
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-    <footer>
-
-        <h3>Pixelift</h3>
-
-        <p>
-            Compartilhe ideias, notícias e conteúdo com a comunidade.
-        </p>
-
-    </footer>
+</footer>
 
 </body>
-
 </html>

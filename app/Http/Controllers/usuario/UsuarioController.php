@@ -8,28 +8,6 @@ class UsuarioController extends Controller
 {
     private $usuarios = [
 
-        'cecilia' => [
-            'username' => 'cecivalença',
-            'foto' => 'https://i.pinimg.com/736x/5a/79/68/5a7968b1bbf2b60f20287fd3a2e6d90d.jpg',
-            'profissao' => 'Estudante de Moda',
-            'bio' => 'Eu sempre busco criar algo original e bonito.',
-            'stats' => [
-                'projetos' => 75,
-                'seguidores' => '14k',
-                'conexoes' => 92
-            ],
-            'posts' => [
-                'https://i.pinimg.com/control1/736x/c6/63/15/c6631564687992a36a16913a9140cb02.jpg',
-                'https://i.pinimg.com/736x/fe/88/d0/fe88d0722b5f560aa3bb52f2a3f0036b.jpg',
-                'https://i.pinimg.com/control1/1200x/d6/b2/12/d6b212be2f29113a6ce5ade7badc9730.jpg'
-            ],
-            'trabalhos/interesses' => [
-                'https://i.pinimg.com/736x/09/b5/a5/09b5a5dcd7487ae6d5a87a3b2a35d90f.jpg',
-                'https://i.pinimg.com/1200x/30/d5/b8/30d5b8d20cfb7e73a3e8a743899d04dc.jpg',
-                'https://i.pinimg.com/control1/736x/aa/5e/b0/aa5eb0309b001188c9853a51a9a0341e.jpg',
-            ]
-        ],
-
         'catarina' => [
             'username' => '@catbellini',
             'foto' => 'https://i.pinimg.com/736x/09/b0/8a/09b08ac85fcc8ea869340ed26a51b2c4.jpg',
@@ -150,7 +128,7 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/3f/02/98/3f02982b2db1329717c6cae3240c645e.jpg',
                 'https://i.pinimg.com/736x/e5/3b/6c/e53b6c93171d5e658b659e6255155806.jpg',
                 'https://i.pinimg.com/736x/e8/5d/ea/e85deac770816eb0467c1d4623d320ba.jpg',
-                'https://i.pinimg.com/1200x/b0/92/43/b09243766a517f30cfda70711e30d2de.jpg'
+                'https://i.pinimg.com/1200x/b0/92/43/b09243766a517f30cfda70711e30d2de.jpg',
             ],
             'trabalhos/interesses' => [
                'https://i.pinimg.com/736x/44/6f/47/446f47d2352710b811c4b5c48bdbeef3.jpg',
@@ -402,14 +380,104 @@ class UsuarioController extends Controller
         ];
     
 
-    public function show($user)
-    {
-        if (!isset($this->usuarios[$user])) {
-            abort(404);
-        }
+  public function show($user)
+{
+    // Perfil especial da Cecília
+    if ($user === 'cecilia') {
 
-        $usuario = $this->usuarios[$user];
+        $usuario = [
+            'username' => '@cecivalenca',
+            'foto' => 'https://i.pinimg.com/736x/5a/79/68/5a7968b1bbf2b60f20287fd3a2e6d90d.jpg',
+            'profissao' => 'Estudante de Moda',
+            'bio' => 'Eu sempre busco criar algo original e bonito. Meu maior desejo é deixar uma marca no mundo por meio da criatividade, da arte e da inovação dentro da indústria da moda.',
+            'stats' => [
+                'projetos' => 75,
+                'seguidores' => '14k',
+                'conexoes' => 92
+            ],
+            'posts' => [
+                'https://i.pinimg.com/736x/c6/63/15/c6631564687992a36a16913a9140cb02.jpg',
+                'https://i.pinimg.com/736x/fe/88/d0/fe88d0722b5f560aa3bb52f2a3f0036b.jpg',
+                'https://i.pinimg.com/736x/0e/70/b0/0e70b0482615afb9bff5a51052490472.jpg',
+                'https://i.pinimg.com/736x/9d/28/4a/9d284ae6581f02c502fe809de9da8391.jpg',
+                'https://i.pinimg.com/736x/f3/de/20/f3de20d45e93a2750f9f27ad9eee8268.jpg',
+                'https://i.pinimg.com/736x/f2/0b/e6/f20be68adfbc6f48c893cf0fb7e8cb88.jpg',
+                'https://i.pinimg.com/736x/32/63/f0/3263f003d5d5169e514eb5bb50e674fc.jpg',
+                'https://i.pinimg.com/736x/ec/e9/eb/ece9eb3231a341f43c8bdd5f211ed95b.jpg',
+                'https://i.pinimg.com/736x/7a/b3/70/7ab3706d2ba63dd3e4ca87dfe0e779c7.jpg',
+                'https://i.pinimg.com/736x/4b/f5/c9/4bf5c9dedeeab47a5fe3e43b312793fe.jpg',
+                'https://i.pinimg.com/736x/9b/0d/a4/9b0da4b11fb3a91b9ddcdc08ca3ef40e.jpg',
+                'https://i.pinimg.com/736x/d2/bd/6e/d2bd6e1540be5a211b878ea216cbac16.jpg',
+                'https://i.pinimg.com/736x/6a/9f/a1/6a9fa1abef90078e63f76a9b92f028f8.jpg',
+                'https://i.pinimg.com/736x/db/6d/59/db6d59d39ce7b21384fd2460bae25cab.jpg',
+                'https://i.pinimg.com/736x/f7/b4/2f/f7b42f1a5d36320be9d8f8427cc14600.jpg',
+                'https://i.pinimg.com/736x/47/29/36/4729365b8ca40fb93df6028d2bd5b33d.jpg',
+                'https://i.pinimg.com/736x/79/45/0e/79450eabd2395d276306fe82576be544.jpg',
+                'https://i.pinimg.com/736x/9e/b9/67/9eb967890cd2e56df6dfa33429418f0d.jpg',
+                'https://i.pinimg.com/736x/9d/5e/eb/9d5eeb0bac145cad54ca561519552e3b.jpg',
+                'https://i.pinimg.com/736x/97/c5/fa/97c5fa63378ed6f88a7313e3fe245088.jpg',
+                'https://i.pinimg.com/736x/8b/17/b7/8b17b72ded46f7108dce7ee2e1b4d755.jpg',
+                'https://i.pinimg.com/736x/05/56/f8/0556f8d3f308798736a8f7504ec5556d.jpg',
+                'https://i.pinimg.com/736x/2c/b5/dd/2cb5dd1f05348e6e00d6660f1f8ed170.jpg',
+                'https://i.pinimg.com/736x/61/d0/34/61d034742f58731399754c54ef732206.jpg',
+                'https://i.pinimg.com/736x/b1/90/1f/b1901fa86f7d12c6668fad8c11313eea.jpg',
+                'https://i.pinimg.com/736x/8d/7a/77/8d7a778ef6dae17bd6c8493aa17cc509.jpg',
+                'https://i.pinimg.com/736x/8c/22/15/8c22154dc72efad1a5a762aa0437d63f.jpg',
+                'https://i.pinimg.com/736x/23/8e/6a/238e6ae2dd70c6a6fb9a51067d2d9a16.jpg',
+                'https://i.pinimg.com/736x/5c/e4/e4/5ce4e466bdcfbb13f5c89f00c1c7b144.jpg',
+                'https://i.pinimg.com/736x/dd/d3/d1/ddd3d1517f50959d0c16e2f31bbf1ecd.jpg',
+                'https://i.pinimg.com/736x/ae/05/ef/ae05ef5a353e288e31c9d4e794d23119.jpg',
+                'https://i.pinimg.com/736x/a6/e4/cd/a6e4cd88a5941716c8d933ad8b9979ff.jpg'
+            ],   
+            'trabalhos/interesses' => [
+                'https://i.pinimg.com/736x/27/68/78/276878e7307b4452621046c6742eefc2.jpg',
+                'https://i.pinimg.com/736x/3a/ec/28/3aec28c9fa909fc608840115664f6734.jpg',
+                'https://i.pinimg.com/736x/ce/e8/d3/cee8d3dd95ef02fc25792dd83e9a7999.jpg',
+                'https://i.pinimg.com/736x/42/97/e7/4297e7f60c1e452c6dc08b8d7432e810.jpg',
+                'https://i.pinimg.com/736x/a8/c1/51/a8c15135aac6ab2a3a09cb4b908cda5d.jpg',
+                'https://i.pinimg.com/736x/39/f7/b7/39f7b7169736e39b318f14a159030505.jpg',
+                'https://i.pinimg.com/736x/53/ae/ca/53aecaeedb2165856d3b40d043f51b8c.jpg',
+                'https://i.pinimg.com/736x/c9/5f/75/c95f7585f8aec699336e830bb06f8829.jpg',
+                'https://i.pinimg.com/736x/91/18/be/9118bebe20bc6b5b1283cac53da80180.jpg',
+                'https://i.pinimg.com/736x/95/fe/7f/95fe7f815560e5924ce17c746c66a35a.jpg',
+                'https://i.pinimg.com/736x/40/45/11/404511a9a85ab52c17c5dcadae899e4a.jpg',
+                'https://i.pinimg.com/736x/d1/ea/c8/d1eac8dddb4413fe23fa0755eb5f903f.jpg',
+                'https://i.pinimg.com/736x/bb/10/e2/bb10e2bb325ef8c8a20190e8eca0431d.jpg',
+                'https://i.pinimg.com/736x/1b/2e/46/1b2e46a5990b06067b57b9bec34b0a73.jpg',
+                'https://i.pinimg.com/736x/33/67/8b/33678b5526964390647325a618c1d828.jpg',
+                'https://i.pinimg.com/736x/d5/29/ec/d529ec94cb25edc037428329e3c080fe.jpg',
+                'https://i.pinimg.com/736x/69/25/86/692586b23dfd7d881ee459c3be7be81c.jpg',
+                'https://i.pinimg.com/736x/ef/16/d7/ef16d7ed0e1231c85ba583f5bafe643b.jpg',
+                'https://i.pinimg.com/736x/87/80/66/878066349bdc5331629cc8f50b7e160f.jpg',
+                'https://i.pinimg.com/736x/5b/e6/94/5be694bffcdfc3e0dba7ac59cc298661.jpg',
+                'https://i.pinimg.com/736x/56/93/6e/56936ede66c5a1198d14cba01a5243ac.jpg',
+                'https://i.pinimg.com/736x/99/d0/c8/99d0c8f9180e2da9569c0585cbfe3919.jpg',
+                'https://i.pinimg.com/736x/48/93/ff/4893ff01a189884727d32975b7daa76c.jpg',
+                'https://i.pinimg.com/736x/93/94/bc/9394bcfc18f15f19a9910dbf08e283e8.jpg',
+                'https://i.pinimg.com/736x/b4/f8/d0/b4f8d0166a631223c628d54d71c249b8.jpg',
+                'https://i.pinimg.com/736x/0e/5c/dd/0e5cdd80aa371bbf33605b9dea40a28b.jpg',
+                'https://i.pinimg.com/736x/c9/e0/dd/c9e0ddf0a8a5b4d94d2884d48005026f.jpg',
+                'https://i.pinimg.com/736x/ee/5f/2e/ee5f2ea28c0eaada8284f00a49a3a1e7.jpg',
+                'https://i.pinimg.com/736x/59/01/fd/5901fd59138b9ca1e5892f7526988f3a.jpg',
+                'https://i.pinimg.com/736x/dd/3c/3b/dd3c3bb364a6d68940ad2f5753a4a993.jpg'
 
-        return view('usuario.usuario', compact('usuario'));
+            ]
+        ];
+
+        return view('usuario.cecilia_perfil', compact('usuario'));
     }
+
+    // Usuários normais
+    if (!isset($this->usuarios[$user])) {
+        abort(404);
+    }
+
+    $usuario = $this->usuarios[$user];
+
+    return view('usuario.usuario', compact('usuario'));
+}
+
+
+
+    
 }
