@@ -69,31 +69,28 @@
             </p>
         @endif
 
-        <form action="{{ route('atualizar-postagem') }}" method="POST">
+     <form action="{{ route('atualizar-postagem', $postagem->CodPostagem) }}" method="POST">
 
-            @csrf
-            @method('PUT')
+    @csrf
+    @method('PUT')
 
-            <label>Código da Postagem</label>
-            <input type="number" name="CodPostagem" placeholder="ID da postagem" required>
+    <label>Título</label>
+    <input type="text" name="Titulo" value="{{ $postagem->Titulo }}" required>
 
-            <label>Título</label>
-            <input type="text" name="Titulo" placeholder="Digite o título">
+    <label>Conteúdo</label>
+    <textarea name="Conteudo" rows="6" required>{{ $postagem->Conteudo }}</textarea>
 
-            <label>Conteúdo</label>
-            <textarea name="Conteudo" rows="6" placeholder="Digite o conteúdo"></textarea>
+    <label>Usuário</label>
+    <input type="text" name="User" value="{{ $postagem->User }}">
 
-            <label>Usuário</label>
-            <input type="text" name="User" placeholder="Nome do usuário">
+    <label>URL da Imagem</label>
+    <input type="text" name="Imagem" value="{{ $postagem->Imagem }}">
 
-            <label>URL da Imagem</label>
-            <input type="text" name="Imagem" placeholder="https://exemplo.com/imagem.jpg">
+    <button type="submit" class="btn-style">
+        Salvar Alterações
+    </button>
 
-            <button type="submit" class="btn-style">
-                Salvar Alterações
-            </button>
-
-        </form>
+</form>
 
     </div>
 

@@ -14,14 +14,14 @@ class CriarController extends Controller
     }
 
     public function store(Request $request)
-    {
-        Postagem::create([
-            'Titulo'   => $request->Titulo,
-            'Conteudo' => $request->Conteudo,
-            'User'     => $request->User,
-            'Imagem'   => $request->Imagem
-        ]);
+{
+    Postagem::create([
+        'Titulo'   => $request->input('titulo'),
+        'Conteudo' => $request->input('conteudo'),
+        'User'     => $request->input('user'),
+        'Imagem'   => $request->input('imagem')
+    ]);
 
-        return redirect()->route('criar-postagem');
-    }
+    return redirect()->route('criar-postagem');
+}
 }

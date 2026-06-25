@@ -63,7 +63,7 @@ class UsuarioController extends Controller
 
         'helena' => [
             'username' => '@helealessandro',
-            'foto' => 'https://i.pinimg.com/736x/58/20/8d/58208d6b02c4991555fb7374f1ee2a00.jpg',
+            'foto' => 'https://i.pinimg.com/736x/19/ed/70/19ed70edb6b96fdf897f9bc10fd97e4d.jpg',
             'profissao' => 'Fotografa de Passarela',
             'bio' => ' Minha paixão pela fotografia está em capturar o encontro entre arte,
              moda e expressão humana, transformando momentos em memórias duradouras.',
@@ -73,10 +73,10 @@ class UsuarioController extends Controller
                 'conexoes' => 110
             ],
             'posts' => [
-                'https://i.pinimg.com/736x/59/7d/89/597d89d2872cf59a24cae2e94ecde195.jpg',
-                'https://i.pinimg.com/736x/95/73/12/9573125d50bd64c4a6cc83258b71f57f.jpg',
-                'https://i.pinimg.com/736x/45/a0/16/45a0163e9fdfe7b31ba8525b9a643530.jpg',
-                'https://i.pinimg.com/1200x/04/9a/8b/049a8bc984d4d57f2a2efbaac351a501.jpg',
+                'https://i.pinimg.com/736x/8d/74/1b/8d741b8606891e154183cda6efa6a532.jpg',
+                'https://i.pinimg.com/736x/dc/3d/f3/dc3df3f88378f15c7c5109f0102f699f.jpg',
+                'https://i.pinimg.com/736x/05/b3/42/05b3421dcc141dc5e571f7317f8842c6.jpg',
+                'https://i.pinimg.com/1200x/03/fa/40/03fa402595b7cce6a8e0e91a520ed2cc.jpg',
                 'https://i.pinimg.com/736x/9d/0d/df/9d0ddf692bedb015c16fbd651a552680.jpg',
                 'https://i.pinimg.com/1200x/37/39/2f/37392f6ff4a9babf27b57be7437b3642.jpg',
                 'https://i.pinimg.com/736x/94/8f/b9/948fb929a75b82ebd59d3052c01f611c.jpg',
@@ -84,7 +84,8 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/1200x/ad/bf/89/adbf8905ddf5c5d2000c8de5f1117a5c.jpg',
                 'https://i.pinimg.com/736x/a0/8f/e7/a08fe784eacb7894e8488e310241d362.jpg',
                 'https://i.pinimg.com/1200x/3d/0b/7e/3d0b7e3f3802cef5eaac578513402bec.jpg',
-                'https://i.pinimg.com/736x/3e/6f/3a/3e6f3ac26e7c1a1e207db65ec3b32faf.jpg'
+                'https://i.pinimg.com/736x/3e/6f/3a/3e6f3ac26e7c1a1e207db65ec3b32faf.jpg',
+                'https://i.pinimg.com/736x/78/5f/1e/785f1e90028cdade273c364465f314ee.jpg'
             ],
             'trabalhos/interesses' => [
                 'https://i.pinimg.com/1200x/ac/fb/4f/acfb4f7ef1787d037118409955e601a4.jpg',
@@ -98,7 +99,12 @@ class UsuarioController extends Controller
                 'https://i.pinimg.com/736x/e1/d5/3a/e1d53a8d0ef333894e9a549f0ea92660.jpg',
                 'https://i.pinimg.com/736x/b1/27/7a/b1277a9ce9e6d029cc8634384225d1b4.jpg',
                 'https://i.pinimg.com/736x/64/31/22/643122b372edff818fae0a15f69d1aff.jpg',
-                'https://i.pinimg.com/736x/e4/63/ba/e463ba9d5e47f5cd1514978b59f8883e.jpg'
+                'https://i.pinimg.com/736x/e4/63/ba/e463ba9d5e47f5cd1514978b59f8883e.jpg',
+                'https://i.pinimg.com/736x/fa/09/bb/fa09bb1fc268764405c0a89c43aa255b.jpg',
+                'https://i.pinimg.com/1200x/af/0f/8b/af0f8b5fdf38d84ddbc0aa13b251a0c1.jpg',
+                'https://i.pinimg.com/736x/52/33/ec/5233ecb9469c2b3a8a582216c6bff264.jpg',
+                'https://i.pinimg.com/1200x/bc/0e/5a/bc0e5a7ac94a62a908426971448c17a8.jpg',
+                'https://i.pinimg.com/1200x/13/b5/29/13b52975e75be693e47ba474b2d13019.jpg'
             ]
         ],
 

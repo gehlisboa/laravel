@@ -16,7 +16,7 @@ class HomeController extends Controller
         'helena' => [
             'name' => 'Helena',
             'username' => 'helealessandro',
-            'photo' => 'https://i.pinimg.com/736x/58/20/8d/58208d6b02c4991555fb7374f1ee2a00.jpg'
+            'photo' => 'https://i.pinimg.com/736x/19/ed/70/19ed70edb6b96fdf897f9bc10fd97e4d.jpg'
         ],
 
         'catarina' => [

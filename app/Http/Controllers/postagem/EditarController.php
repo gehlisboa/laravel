@@ -8,18 +8,18 @@ use App\Models\Postagem\Postagem;
 
 class EditarController extends Controller
 {
-    public function edit()
+    // MOSTRAR A TELA DE EDIÇÃO
+    public function edit($id)
     {
-        return view('postagem.editar_postagem');
+        $postagem = Postagem::findOrFail($id);
+
+        return view('postagem.editar_postagem', compact('postagem'));
     }
 
-    public function update(Request $request)
+    // ATUALIZAR POSTAGEM
+    public function update(Request $request, $id)
     {
-        $postagem = Postagem::find($request->CodPostagem);
-
-        if (!$postagem) {
-            return back()->with('erro', 'Postagem não encontrada.');
-        }
+        $postagem = Postagem::findOrFail($id);
 
         $postagem->update([
             'Titulo'   => $request->Titulo,
@@ -28,7 +28,8 @@ class EditarController extends Controller
             'Imagem'   => $request->Imagem
         ]);
 
-        return redirect()->route('editar-postagem')
-                         ->with('sucesso', 'Postagem atualizada com sucesso!');
+        return redirect()
+            ->route('editar-postagem', $id)
+            ->with('sucesso', 'Postagem atualizada com sucesso!');
     }
 }

@@ -76,37 +76,38 @@
 
     <div class="feed-grid">
 
-        @forelse($postagens as $post)
+     @forelse($postagens as $post)
 
-            <div class="feed-card">
+    <div class="feed-card">
 
-                <img src="{{ $post->Imagem ?: 'https://picsum.photos/600/400' }}">
+        @if($post->Imagem)
+    <img src="{{ $post->Imagem }}">
+@endif
 
-                <div class="feed-content">
+        <div class="feed-content">
 
-                    <span class="feed-author">
-                        {{ $post->User }}
-                    </span>
+            <span class="feed-author">
+                {{ $post->User }}
+            </span>
 
-                    <h3>{{ $post->Titulo }}</h3>
+            <h3>{{ $post->Titulo }}</h3>
 
-                    <p>{{ $post->Conteudo }}</p>
+            <p>{{ $post->Conteudo }}</p>
 
-                    <div class="feed-actions">
+            <div class="feed-actions">
 
-                        <a href="/editar-postagem?id={{ $post->CodPostagem }}"
-                           class="feed-edit">Editar</a>
-
-                    </div>
-
-                </div>
+              <a href="/editar-postagem/{{ $post->CodPostagem }}" class="btn-style">
+    Editar
+</a>
 
             </div>
 
-        @empty
-            <h3>Nenhuma postagem encontrada.</h3>
-        @endforelse
+        </div>
+    </div>
 
+@empty
+    <h3>Nenhuma postagem encontrada.</h3>
+@endforelse
     </div>
 
 </section>

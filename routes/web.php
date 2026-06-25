@@ -8,16 +8,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Postagem\CriarController;
 
 Route::get('/criar-postagem', [CriarController::class, 'create'])->name('criar-postagem');
-Route::post('/criar-postagem', [CriarController::class, 'store'])->name('salvar-postagem');
+
+Route::post('/criar-postagem', [CriarController::class, 'store'])->name('criar-postagem.store');
 
 /* =========================
    EDITAR POSTAGEM
 ========================= */
 use App\Http\Controllers\Postagem\EditarController;
 
-Route::get('/editar-postagem', [EditarController::class, 'edit'])->name('editar-postagem');
-Route::put('/editar-postagem', [EditarController::class, 'update'])->name('atualizar-postagem');
+Route::get('/editar-postagem/{id}', [EditarController::class, 'edit'])->name('editar-postagem');
 
+Route::put('/editar-postagem/{id}', [EditarController::class, 'update'])->name('atualizar-postagem');
 /* =========================
    LISTAR POSTAGEM
 ========================= */

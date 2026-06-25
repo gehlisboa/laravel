@@ -667,10 +667,12 @@ a {
     transform: translateY(-4px);
 }
 
-.page-feed .feed-card img {
+
+.feed-card img {
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .page-feed .feed-content {

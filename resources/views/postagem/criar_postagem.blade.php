@@ -59,33 +59,35 @@
 
     <div class="publish-card">
 
-        <form>
+     <form method="POST" action="{{ route('criar-postagem.store') }}">
 
-            <label>Título</label>
-            <input type="text" placeholder="Digite o título">
+    @csrf
 
-            <br><br>
+    <label>Título</label>
+    <input type="text" name="titulo" placeholder="Digite o título">
 
-            <label>Conteúdo</label>
-            <textarea rows="6" placeholder="Digite o conteúdo"></textarea>
+    <br><br>
 
-            <br><br>
+    <label>Conteúdo</label>
+    <textarea name="conteudo" rows="6" placeholder="Digite o conteúdo"></textarea>
 
-            <label>Usuário</label>
-            <input type="text" placeholder="Nome do usuário">
+    <br><br>
 
-            <br><br>
+    <label>Usuário</label>
+    <input type="text" name="user" placeholder="Nome do usuário">
 
-            <label>URL da Imagem</label>
-            <input type="text" placeholder="https://imagem.com/foto.jpg">
+    <br><br>
 
-            <br><br>
+    <label>URL da Imagem</label>
+    <input type="text" name="imagem" placeholder="https://imagem.com/foto.jpg">
 
-            <button type="submit" class="btn-style">
-                Publicar Postagem
-            </button>
+    <br><br>
 
-        </form>
+    <button type="submit" class="btn-style">
+        Publicar Postagem
+    </button>
+
+</form>
 
     </div>
 
